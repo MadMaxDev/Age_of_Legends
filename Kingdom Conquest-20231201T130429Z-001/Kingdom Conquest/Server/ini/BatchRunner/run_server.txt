@@ -1,0 +1,6 @@
+../XGDB4Web/XGDB4Web_d.exe	gdb4web_cfg.txt
+../XGS4Web/XGS4Web_d.exe	gs4web_cfg.txt
+../XDBS4Web/XDBS4Web_d.exe	dbs4web_cfg.txt
+../XLP4Web/XLP4Web_d.exe	lp4web_cfg.txt
+../XCAAFS4Web/XCAAFS4Web_d.exe	caafs4web_cfg1.txt
+../XCLS4Web/XCLS4Web_d.exe	cls4web_cfg1.txt

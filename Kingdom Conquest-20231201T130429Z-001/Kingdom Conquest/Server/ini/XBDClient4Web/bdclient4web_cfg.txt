@@ -1,0 +1,8 @@
+#include ../cmncfg.txt
+XBDClient4Web_CFG
+{
+	szIP	= $(BD4WebOUTTERIP)
+	nPort	= $(PORT_BD4Web)
+	bNBO	= true
+	szCharSet	= GBK
+}

@@ -1,0 +1,168 @@
+程序名称	缩写	意义	特别注释
+TTY		卡通游戏代号	
+Client	C	客户端	
+Server	S	服务器	
+World		世界	
+Scn		场景	
+CopyScn		副本场景	"wow叫Instance,但是感觉不爽"
+Area		区域	
+Mng		管理	
+Data		数据	
+Atb		属性	
+Flag		标志位	
+Packet		数据包	
+Unit		单元	
+
+Obj		物体	
+Cha		角色	
+Player		玩家/用户	"所有程序要统一用Player,不能用User和Client"
+NonPlayerCha	NpcCha	非玩家控制角色	
+PlayerCha		玩家控制角色	
+Bld		建筑	
+
+ID			"因为程序有许多种ID,为了避免混淆,不要使用ID这个词"
+Excel+文件名缩写+ID	ExcelID	从表中读出的ID	"如果一个类只使用一个表的ID,则可用缩写"
+OnlyID		"对象唯一ID,都是8个字节的数据"	
+AutoID		"程序中动态生成的ID,随着类消亡,或者其他事件触发改变"	
+
+
+Add		填加	
+Del		删除	
+Get		获取	
+Set		设置	
+Chg		改变/换
+Ban		禁止
+Rand		随机
+Build		初始化
+Destroy		释放
+Logic		逻辑
+Father		父
+
+
+
+后缀Base		服务器/客户端都继承的类，比如：GameMngBase
+后缀C		客户端继承的子类，比如：GameMngC
+后缀S		服务器继承的子类，比如：GameMngS
+
+
+前缀i或者n		整数
+前缀sz		子串
+前缀p		指针
+前缀a		数组
+前缀pp		指针的指针
+前缀boo		布尔
+前缀by		字节(BYTE)
+前缀w		双字节(WORD)
+前缀dw		四字节(DWORD)
+前缀qw		八字节(QWORD)
+
+//C++ 命名前缀		
+LONG类型		lParam;
+UINT类型		uNotify
+DWORD类型		dwStart
+PSTR类型		pszTip
+LPSTR类型		lpCmdLine
+LPTSTR类型		lpszClassName	
+LPVOID类型		lpReserved	
+WPARAM类型		wParam	
+LPARAM类型		lParam	
+
+char		chText	
+bool		bEnable	"bool比BYTE用的多,应该bool简化"
+unsigned int		nCmdShow	
+int		iTmp	
+float		fTmp	
+BYTE		byVal	
+DWORD		dwTmp	
+QWORD		qwTmp	
+String		strText	
+类成员变量		m_nVal	
+全局变量		g_nMsg	
+
+职业		Career
+游侠		Paladin
+力士		Hercules
+符咒师		Warlock
+法师		Mage
+
+基本天赋点数		GeniusPoint
+负重空间		BagSpace
+当前经验		Exp
+基本状态抗性点数		AntiPoint
+基本属性点数		AtbPoint
+金钱		Money
+储藏箱中金钱		SaveMoney
+幸运		Luck
+性别		Sex
+AI组		AIGroup
+等级		Level
+类型		Type
+力量		Str
+体魄		Vit
+元神		Int
+筋骨		Def
+生命		HP
+法力		MP
+杀气		CombatPoint
+破绽		Rip
+剑气		SwordPoint
+力量		MaxHP
+体魄		MaxMP
+杀气		MaxCombatPoint
+破绽		MaxRip
+剑气		MaxSwordPoint
+抗迷惑		AntiPuzzle
+抗减速		AntiDecelerate
+抗流失		AntiDrain
+抗晕厥		AntiFaint
+攻击力		AP
+伤害力		Damage
+防御力		DP
+法术抗性		MDP
+法术会心几率		ChanceM
+物理会心几率		ChanceP
+抵抗会心几率		DefChance
+
+飞行路径		TravelPath
+道具		Item
+道具位置组（盒子）		Box
+随身背包		Bag
+储藏箱（银行）		Bank
+
+装备		Equip
+头		Helm
+项链		Neck
+(护肩)		Shoulder
+披风		Cloak
+上身		Armor
+内衣		Vest
+(外套)		Tabard
+(护腕)		Wrists
+(手套)		Gloves
+腰带		Waist
+下身		Trousers
+鞋		Boots
+饰品1(戒指)		Trinket1	
+饰品2(戒指)		Trinket2	
+(耳环)		Trinket3	
+(耳环)		Trinket4	
+武器(主手)		Weapon	
+(副手)		Shield	
+法宝(远程)		MagicWeapon	
+符纸(弹药)		FuZhi	
+
+交易		Deal	
+摆摊		Stall	
+
+系		Faculty	
+罗刹力士		LuoSha	 
+金刚力士		JinGang	 
+御剑游侠		YuJian	 
+阵法游侠		ZhenFa	 
+控火法师		Huo	
+司风法师		Feng	 
+恢复符咒师		HuiFu	 
+增强符咒师		ZengQiang	
+
+骑关系		Ride	
+骑关系的乘客		Passenger	

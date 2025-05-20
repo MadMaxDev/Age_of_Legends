@@ -1,0 +1,4 @@
+CFG_INFO
+{
+	szMBPath	= /trunk/ini/excel_tables/
+}

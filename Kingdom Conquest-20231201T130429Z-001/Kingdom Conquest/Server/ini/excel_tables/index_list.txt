@@ -1,0 +1,82 @@
+备注	索引	文件名	索引列	起始行	使用类型(0:服务器客户端都加载,1:服务器,2:客户端,3:客户端服务器都不加载,可能程序会临时加载)"	各列类型(0:I,1:S,2:F)	数据库表格	校验和(由部署工具生成)
+道具列表	1	item/item_list	0	1	0	0*1*1*0*1*0*0*0*0*0*0*1*0*0*0*0*0*0*0	excel_item_list	
+文本文件	5	etc/text	0	1	1	0*1	excel_text	
+商店道具	6	etc/store_items	0	1	0	0*0*0*0	excel_store_item	
+金钱兑换率	7	etc/store_conversion_rate	0	1	0	0*0	excel_store_conversion_rate	
+建筑列表	8	building/building_list	0	1	0	0*1*0*0*0*0*0*0*0*0*0*0	excel_building_list	
+建筑等级限制列表	9	building/building_level_limit	0	1	0	0*0	excel_building_level_limit	
+建筑数量限制列表	10	building/building_num_limit	0	1	0	0*0*0*0	excel_building_num_limit	
+兵营生产配置	11	etc/barrack_production	0	1	0	0*0	excel_barrack_production	
+民居生产配置	12	etc/house_production	0	1	0	0*0*0*0	excel_house_production	
+金矿生产配置	13	etc/goldore_production	0	1	0	0*0*0*0*0*0*0*0*0*0*2*0	excel_goldore_production	
+加速花费表	14	etc/accelerate_cost	0	1	0	0*0*0	excel_accelerate_cost	
+士兵表	15	etc/soldier	0	1	0	0*1*0*0*0*0*0	excel_soldier	
+科技表	16	etc/technology	0	1	0	0*0*0*2	excel_technology	
+联盟建筑表	17	alliance/alliance_building_list	0	1	1	0*1*0*0*0	excel_alliance_building_list	
+联盟议会配置	18	alliance/alliance_congress	0	1	0	0*0*0*0*0*2*0	excel_alliance_congress	
+联盟发展度兑换	19	alliance/alliance_contribute_rate	0	1	0	0	excel_alliance_contribute_rate	
+联盟创建条件	20	alliance/alliance_create_cost	0	1	0	0	excel_alliance_create_cost	
+联盟职权表	21	alliance/alliance_position_right	0	1	1	0*1*0*0*0*0*0*0*0*0*0*0*0	excel_alliance_position_right	
+联盟发展度变更表	22	alliance/alliance_development	0	1	1	0*1*0	excel_alliance_development	
+vip特权表	23	etc/vip_right	0	1	0	0*0*0*0*0*0*0*0*0*0*2*0	excel_vip_right	
+角色模板表	24	etc/character_template	0	1	1	0*0*0*0*0	excel_character_template	
+地理信息表	25	etc/terrain_info	0	0	3	0*0*0*0*0	excel_terrain_info	
+角色等级经验表	26	etc/char_level_exp	0	1	0	0*0	excel_char_level_exp	
+许愿树	27	etc/christmas_tree	0	1	1	0*0*0*0*1*1*0	excel_christmas_tree	
+将领等级经验表	28	etc/hero_level_exp	0	1	0	0*0*0*0	excel_hero_level_exp	
+将领训练馆	29	etc/training_hall	0	1	0	0*0*0	excel_training_hall	
+抽奖概率表	30	lottery/lottery_probability	0	1	1	0*0		
+抽奖内容表	31	lottery/lottery_content	0	1	1	0*0*0*0		
+抽奖配置表	32	lottery/lottery_cfg	0	1	0	0*0*0*0*0*0	excel_lottery_cfg	
+大使馆配置表	33	building/embassy_cfg	0	1	1	0*0*0*0	excel_embassy_cfg	
+联盟抽奖内容表	34	lottery/lottery_content_alliance	0	1	1	0*0*0*0		
+加速花费打折表	35	etc/accelerate_cost_discount	0	1	0	0*2	excel_accelerate_cost_discount	
+改名花费表	36	etc/change_name	0	1	0	0*0*0	excel_change_name	
+玩家出生位置表	37	etc/player_birthplace	0	1	1	0*0*0*0*0		
+充值配置表	38	etc/recharge_diamond	0	1	0	0*0*0	excel_recharge_diamond	
+角色非法名字表	39	etc/badname	0	0	0	1		
+版本配置	40	etc/version	0	1	2	1		
+时间事件	41	time_event/time_event	0	1	1	0*1*0*0	excel_time_event	
+世界名城表	42	etc/world_famous_city	0	1	1	0*0*0*0*0*0		
+账号非法字符过滤表	43	etc/badname_account	0	0	1	1		
+武将品质	101	etc/hero_class	0	1	1	0*0*0*0*0*2	excel_hero_class	
+武将成长率换算	102	etc/hero_grow	0	1	0	2*2	excel_hero_grow	
+酒馆刷新	103	etc/tavern_refresh	0	1	1	0*0*1	excel_tavern_refresh	
+战斗（讨伐）兵力配置	104	etc/combat_raid	0	1	0	0*1*1*1*1*1*0*0	excel_combat_raid	
+武将名字表	105	etc/hero_name	0	1	1	1*1*1*1*1*1*1	excel_hero_name	
+道具合成表	106	item/item_compos	0	1	1	0*1	excel_item_compos	
+道具分解表	107	item/item_discompos	0	1	1	0*1	excel_item_discompos	
+任务表	108	quest/quest_list	0	1	0	0*1*1*1*1*0*1*1*1*1*1*0*0*0*0*0*0*0*1*1*0*0*0*0*0*1*0*0*0*1*2*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0	excel_quest_list	
+副本列表	109	instance/instance_list	0	1	0	0*1*1*1*1*1*1*0*0*0*0*0*0*0*0*1	excel_instance_list	
+百战不殆	110	instance/baizhanbudai	0	1	1	0*1*1*0*0*1*0*0	excel_baizhanbudai	
+战斗通用配置表	111	etc/combat	0	1	0	0*0*0	excel_combat	
+世界金矿基础配置	112	etc/worldgoldmine	0	1	0	0*1*0*1*1*1*1	excel_worldgoldmine	
+世界金矿产出表	113	etc/worldgoldmine_out	0	1	0	0*2	excel_worldgoldmine_out	
+战斗（世界金矿）兵力配置	114	etc/worldgoldmine_combat	0	1	1	0*1	excel_worldgoldmine_combat	
+定时（小时）事件	115	etc/fixhour	0	1	0	0*1	excel_fixhour	
+兵种数据	116	etc/army	0	1	0	0*1*1*2	excel_army	
+南征北战	117	instance/nanzhengbeizhan	0	1	1	0*0*1*1*0*0*1*0*0	excel_nanzhengbeizhan	
+疗伤效果	118	etc/heal	0	1	0	0*0	excel_heal	
+新手引导	119	etc/quest_guide	0	1	2	0*1*0*0*0		
+角色名字表	200	etc/player_name	0	1	3			
+客户端南征北战配置	201	instance/nanzhengbeizhan_cli	0	1	2			
+草药	202	etc/drug	0	1	0	0*0	excel_drug	
+武将数量限制	203	etc/hero_num	0	1	0	0*0	excel_hero_num	
+杂项定义	204	etc/cmndef	0	1	0	0*0*1	excel_cmndef	
+副本介绍	205	instance/instance_tips	0	1	2			
+世界名城产出	206	etc/worldcity_out	0	1	1	0*0*0*1	excel_worldcity_out	
+世界名城兵力	207	etc/worldcity_combat	0	1	1	0*1*0	excel_worldcity_combat	
+世界名城奖励	208	etc/worldcity_bonus	0	1	1	0*0	excel_worldcity_bonus	
+新手引导	209	etc/newbie_guide	0	1	2			
+武将名字表	210	etc/hero_name_en	0	1	1	1	excel_hero_name_en	
+角色名字表	211	etc/player_name_en	0	1	2			
+客户端错误提示	212	etc/warn_err_tips	0	1	2			
+限免赠送钻石	213	etc/app_gift	0	1	1	0*0*1	excel_app_gift	
+联盟送兵配置	214	alliance/alliance_donate_soldier	0	1	0	0*0*2	excel_alliance_donate_soldier	
+金币市场等级限制	215	etc/gold_market_level	0	1	0	0*0	excel_gold_market_level	
+百战不殆(史诗级)	216	instance/baizhanbudai_epic	0	1	1	0*1*1*0*0*1*0*0	excel_baizhanbudai_epic	
+世界资源表	217	etc/world_res	0	1	1	0*0*0*0*0*0*0*0*1*1*1*1		
+联盟副本	218	instance/alli_instance	0	1	1	0*1*1*0*0*1*0*0	excel_alli_instance	
+竞技场	219	etc/arena	0	1	0	0*0*0*0*0*0	excel_arena	
+竞技场奖励	220	etc/arena_reward	0	1	0	0*0	excel_arena_reward	
+位置收藏夹	221	etc/position_mark	0	1	0	0	excel_position_mark	

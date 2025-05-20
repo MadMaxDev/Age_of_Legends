@@ -1,0 +1,3 @@
+#define	PORT	2014
+#define	NAME	survey
+#include	glogger_cmn.txt

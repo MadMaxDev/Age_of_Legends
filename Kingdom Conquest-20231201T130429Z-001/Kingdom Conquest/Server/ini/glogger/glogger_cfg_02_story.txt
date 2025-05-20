@@ -1,0 +1,3 @@
+#define	PORT	2002
+#define	NAME	story
+#include	glogger_cmn.txt

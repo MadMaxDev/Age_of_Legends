@@ -1,0 +1,140 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameUtilityLib", "..\..\GAME\GameUtilityLib\GameUtilityLib.vcproj", "{E8B592A7-90E8-48D1-87F8-447A12730AB1}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WHCMN", "..\..\ENGINE\WHCMN\WHCMN.vcproj", "{96BBD710-F10A-40F7-A8AB-D0102B985CEB}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WHNET", "..\..\ENGINE\WHNET\WHNET.vcproj", "{020CDDD2-4A25-437C-B930-F67C46741D99}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PNGS", "..\..\ENGINE\PNGS\PNGS.vcproj", "{4066490D-7B23-46EF-A692-7D1D4BE47457}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TTYText", "..\..\TTY\TTYText\TTYText.vcproj", "{044B41D8-4B67-4B13-AA0B-AFFC192242F9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A358F307-B5F5-42B4-A173-C289EC9EFF42} = {A358F307-B5F5-42B4-A173-C289EC9EFF42}
+		{4066490D-7B23-46EF-A692-7D1D4BE47457} = {4066490D-7B23-46EF-A692-7D1D4BE47457}
+		{96BBD710-F10A-40F7-A8AB-D0102B985CEB} = {96BBD710-F10A-40F7-A8AB-D0102B985CEB}
+		{9103EA57-E6F6-41BE-B2C4-2FB553BEB330} = {9103EA57-E6F6-41BE-B2C4-2FB553BEB330}
+		{E8B592A7-90E8-48D1-87F8-447A12730AB1} = {E8B592A7-90E8-48D1-87F8-447A12730AB1}
+		{E8B592A7-90E8-48D1-87F8-447A12730AB8} = {E8B592A7-90E8-48D1-87F8-447A12730AB8}
+		{E8B592A7-90E8-48D1-87F8-447A12730AB9} = {E8B592A7-90E8-48D1-87F8-447A12730AB9}
+		{020CDDD2-4A25-437C-B930-F67C46741D99} = {020CDDD2-4A25-437C-B930-F67C46741D99}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TTYS_CLib", "..\..\TTY\TTYS_CLib\TTYS_CLib.vcproj", "{E8B592A7-90E8-48D1-87F8-447A12730AB9}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TTYClientLib", "..\..\TTY\TTYClientLib\TTYClientLib.vcproj", "{E8B592A7-90E8-48D1-87F8-447A12730AB8}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cryptlib", "..\..\..\3RD\cryptlib\cryptlib.vcproj", "{A358F307-B5F5-42B4-A173-C289EC9EFF42}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ScriptSDKU", "..\..\ENGINE\ScriptSDK\ScriptSDKU.vcproj", "{9103EA57-E6F6-41BE-B2C4-2FB553BEB330}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Common", "..\..\TTY\Common\Common.vcproj", "{26C98B97-B739-4EC9-8216-0A7DCA5CBF0C}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 9
+		SccProjectUniqueName0 = ..\\..\\GAME\\GameUtilityLib\\GameUtilityLib.vcproj
+		SccProjectName0 = \u0022$/PRJ/GAME/GameUtilityLib\u0022,\u0020KHBAAAAA
+		SccLocalPath0 = ..\\..\\GAME\\GameUtilityLib
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectUniqueName1 = ..\\..\\ENGINE\\WHCMN\\WHCMN.vcproj
+		SccProjectName1 = \u0022$/PRJ/ENGINE/WHCMN\u0022,\u0020TKAAAAAA
+		SccLocalPath1 = ..\\..\\ENGINE\\WHCMN
+		SccProvider1 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectUniqueName2 = ..\\..\\ENGINE\\WHNET\\WHNET.vcproj
+		SccProjectName2 = \u0022$/PRJ/ENGINE/WHNET\u0022,\u0020SPAAAAAA
+		SccLocalPath2 = ..\\..\\ENGINE\\WHNET
+		SccProvider2 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectUniqueName3 = ..\\..\\ENGINE\\PNGS\\PNGS.vcproj
+		SccProjectName3 = \u0022$/PRJ/ENGINE/PNGS\u0022,\u0020JIAAAAAA
+		SccLocalPath3 = ..\\..\\ENGINE\\PNGS
+		SccProvider3 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectUniqueName4 = ..\\..\\TTY\\TTYText\\TTYText.vcproj
+		SccProjectName4 = \u0022$/PRJ/TTY/TTYText\u0022,\u0020JFBAAAAA
+		SccLocalPath4 = ..\\..\\TTY\\TTYText
+		SccProvider4 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectUniqueName5 = ..\\..\\TTY\\TTYS_CLib\\TTYS_CLib.vcproj
+		SccProjectName5 = \u0022$/PRJ/TTY/TTYS_CLib\u0022,\u0020IFBAAAAA
+		SccLocalPath5 = ..\\..\\TTY\\TTYS_CLib
+		SccProvider5 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectUniqueName6 = ..\\..\\TTY\\TTYClientLib\\TTYClientLib.vcproj
+		SccProjectName6 = \u0022$/PRJ/TTY/TTYClientLib\u0022,\u0020HFBAAAAA
+		SccLocalPath6 = ..\\..\\TTY\\TTYClientLib
+		SccProvider6 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectUniqueName7 = ..\\..\\..\\3RD\\cryptlib\\cryptlib.vcproj
+		SccProjectName7 = \u0022$/3RD/cryptlib\u0022,\u0020FAAAAAAA
+		SccLocalPath7 = ..\\..\\..\\3RD\\cryptlib
+		SccProvider7 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectUniqueName8 = ..\\..\\ENGINE\\ScriptSDK\\ScriptSDKU.vcproj
+		SccProjectName8 = \u0022$/PRJ/ENGINE/ScriptSDK\u0022,\u0020KWCAAAAA
+		SccLocalPath8 = ..\\..\\ENGINE\\ScriptSDK
+		SccProvider8 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{E8B592A7-90E8-48D1-87F8-447A12730AB1}.Debug.ActiveCfg = Debug|Win32
+		{E8B592A7-90E8-48D1-87F8-447A12730AB1}.Debug.Build.0 = Debug|Win32
+		{E8B592A7-90E8-48D1-87F8-447A12730AB1}.Release.ActiveCfg = Release|Win32
+		{E8B592A7-90E8-48D1-87F8-447A12730AB1}.Release.Build.0 = Release|Win32
+		{96BBD710-F10A-40F7-A8AB-D0102B985CEB}.Debug.ActiveCfg = Debug|Win32
+		{96BBD710-F10A-40F7-A8AB-D0102B985CEB}.Debug.Build.0 = Debug|Win32
+		{96BBD710-F10A-40F7-A8AB-D0102B985CEB}.Release.ActiveCfg = Release|Win32
+		{96BBD710-F10A-40F7-A8AB-D0102B985CEB}.Release.Build.0 = Release|Win32
+		{020CDDD2-4A25-437C-B930-F67C46741D99}.Debug.ActiveCfg = Debug|Win32
+		{020CDDD2-4A25-437C-B930-F67C46741D99}.Debug.Build.0 = Debug|Win32
+		{020CDDD2-4A25-437C-B930-F67C46741D99}.Release.ActiveCfg = Release|Win32
+		{020CDDD2-4A25-437C-B930-F67C46741D99}.Release.Build.0 = Release|Win32
+		{4066490D-7B23-46EF-A692-7D1D4BE47457}.Debug.ActiveCfg = Debug|Win32
+		{4066490D-7B23-46EF-A692-7D1D4BE47457}.Debug.Build.0 = Debug|Win32
+		{4066490D-7B23-46EF-A692-7D1D4BE47457}.Release.ActiveCfg = Release|Win32
+		{4066490D-7B23-46EF-A692-7D1D4BE47457}.Release.Build.0 = Release|Win32
+		{044B41D8-4B67-4B13-AA0B-AFFC192242F9}.Debug.ActiveCfg = Debug|Win32
+		{044B41D8-4B67-4B13-AA0B-AFFC192242F9}.Debug.Build.0 = Debug|Win32
+		{044B41D8-4B67-4B13-AA0B-AFFC192242F9}.Release.ActiveCfg = Release|Win32
+		{044B41D8-4B67-4B13-AA0B-AFFC192242F9}.Release.Build.0 = Release|Win32
+		{E8B592A7-90E8-48D1-87F8-447A12730AB9}.Debug.ActiveCfg = ClientDebug|Win32
+		{E8B592A7-90E8-48D1-87F8-447A12730AB9}.Debug.Build.0 = ClientDebug|Win32
+		{E8B592A7-90E8-48D1-87F8-447A12730AB9}.Release.ActiveCfg = ClientRelease|Win32
+		{E8B592A7-90E8-48D1-87F8-447A12730AB9}.Release.Build.0 = ClientRelease|Win32
+		{E8B592A7-90E8-48D1-87F8-447A12730AB8}.Debug.ActiveCfg = Debug|Win32
+		{E8B592A7-90E8-48D1-87F8-447A12730AB8}.Debug.Build.0 = Debug|Win32
+		{E8B592A7-90E8-48D1-87F8-447A12730AB8}.Release.ActiveCfg = Release|Win32
+		{E8B592A7-90E8-48D1-87F8-447A12730AB8}.Release.Build.0 = Release|Win32
+		{A358F307-B5F5-42B4-A173-C289EC9EFF42}.Debug.ActiveCfg = Debug|Win32
+		{A358F307-B5F5-42B4-A173-C289EC9EFF42}.Debug.Build.0 = Debug|Win32
+		{A358F307-B5F5-42B4-A173-C289EC9EFF42}.Release.ActiveCfg = Release|Win32
+		{A358F307-B5F5-42B4-A173-C289EC9EFF42}.Release.Build.0 = Release|Win32
+		{9103EA57-E6F6-41BE-B2C4-2FB553BEB330}.Debug.ActiveCfg = Debug|Win32
+		{9103EA57-E6F6-41BE-B2C4-2FB553BEB330}.Debug.Build.0 = Debug|Win32
+		{9103EA57-E6F6-41BE-B2C4-2FB553BEB330}.Release.ActiveCfg = Release|Win32
+		{9103EA57-E6F6-41BE-B2C4-2FB553BEB330}.Release.Build.0 = Release|Win32
+		{26C98B97-B739-4EC9-8216-0A7DCA5CBF0C}.Debug.ActiveCfg = Debug|Win32
+		{26C98B97-B739-4EC9-8216-0A7DCA5CBF0C}.Debug.Build.0 = Debug|Win32
+		{26C98B97-B739-4EC9-8216-0A7DCA5CBF0C}.Release.ActiveCfg = Release|Win32
+		{26C98B97-B739-4EC9-8216-0A7DCA5CBF0C}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

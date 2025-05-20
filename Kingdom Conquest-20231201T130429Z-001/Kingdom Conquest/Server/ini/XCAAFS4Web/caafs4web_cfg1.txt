@@ -1,0 +1,7 @@
+#include		../cmncfg.txt
+
+#define	QUICKDROP
+#define	GROUPID		0
+#define XCAAFS4WebOUTTERIP $(XCAAFS4WebOUTTERIP1)
+
+#include caafs4web_cfg_cmn.txt

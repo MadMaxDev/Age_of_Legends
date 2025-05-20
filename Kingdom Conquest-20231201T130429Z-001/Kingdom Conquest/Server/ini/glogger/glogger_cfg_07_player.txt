@@ -1,0 +1,3 @@
+#define	PORT	2007
+#define	NAME	player
+#include	glogger_cmn.txt

@@ -1,0 +1,563 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{1f0f8f81-dca9-44dd-9d68-0a54c57d9d6b}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Dbg">
+      <UniqueIdentifier>{1628691e-8a59-4acf-bed6-2ecd5bb55073}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ID">
+      <UniqueIdentifier>{e9a64fde-386a-452c-b8f4-c6cadeafcc0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Thread">
+      <UniqueIdentifier>{0dc84e97-5f4a-4eba-9f84-6310e7c83b9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\File">
+      <UniqueIdentifier>{12640e2f-323b-4eeb-97d3-b672b1b04e3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Process">
+      <UniqueIdentifier>{1a96e89a-183c-4fbd-87ec-a6cacd51a5b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Time">
+      <UniqueIdentifier>{f8bcfbee-486a-4018-a6ba-6fb5986eb15b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DataProp">
+      <UniqueIdentifier>{e4f82471-acd9-4341-8453-de0d96b53b82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Automation">
+      <UniqueIdentifier>{72e70fa5-75a9-41ff-a1f0-d9d136bc93f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Mem">
+      <UniqueIdentifier>{4f66148d-af85-4853-8bfb-8bcb5c5c83c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\IPC">
+      <UniqueIdentifier>{826a15e9-16ec-4453-bdf0-8f603ba31c9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Alloc">
+      <UniqueIdentifier>{a3cf330c-e821-40e6-a0e8-6a21757a7787}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DLL">
+      <UniqueIdentifier>{ce0be00e-bce8-4e47-9774-5ba17dd54823}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Math">
+      <UniqueIdentifier>{723e7fb1-25fb-455b-a24d-3d7d06504f01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Crypt">
+      <UniqueIdentifier>{c3d200ef-27b8-43bd-8400-9e0072b4cb4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Zlib">
+      <UniqueIdentifier>{88a80a20-47df-4dad-92eb-a28aee44d70f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Compress">
+      <UniqueIdentifier>{36ee9aca-6140-45ab-ab83-1f7ed92c3424}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Package">
+      <UniqueIdentifier>{dfaa29af-87ab-4fe6-8c52-633e670104c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Str">
+      <UniqueIdentifier>{b64cbcf7-3083-46bb-a90a-8a10f12b2873}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6d2522fe-37a5-413c-b43a-9ed65668ec48}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Dbg_Hdr">
+      <UniqueIdentifier>{b2fceb0b-03d7-4729-9e6f-b158a6bec46d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ID_Hdr">
+      <UniqueIdentifier>{dbb38763-81e8-45d5-93da-212115beff0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Thread_Hdr">
+      <UniqueIdentifier>{a379fda9-38cc-4a93-8a38-3cc040b79efc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\File_Hdr">
+      <UniqueIdentifier>{cacd7392-5b03-4137-9fe1-e56f065c8d31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Process_Hdr">
+      <UniqueIdentifier>{74cb5961-1eb2-4696-ab58-a9fce7a04c84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Time_Hdr">
+      <UniqueIdentifier>{82806f1a-156d-4abd-a99c-a2584fa8d7ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\DataProp_Hdr">
+      <UniqueIdentifier>{2028c148-ebda-4abd-90dc-474f7fa3c2e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Automation_Hdr">
+      <UniqueIdentifier>{6b98c1b3-6dd4-4afc-b988-42165c951886}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Calc_Hdr">
+      <UniqueIdentifier>{dbdbde00-5043-4243-8a68-bdcf5a1e6a51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Mem_Hdr">
+      <UniqueIdentifier>{f621e75f-2170-41d7-b10c-c2df1813f9d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\IPC_Hdr">
+      <UniqueIdentifier>{27ff3b02-a792-4269-ba02-7a8e6d4c41f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Alloc_Hdr">
+      <UniqueIdentifier>{2dae80b6-72f7-4e65-a94f-72bbc578a60b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\DLL_Hdr">
+      <UniqueIdentifier>{66e38245-240d-4ccf-8840-6974b4aa347f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Math_Hdr">
+      <UniqueIdentifier>{706f7aa9-61ef-4f27-9f10-ef218375b047}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Crypt_Hdr">
+      <UniqueIdentifier>{70be5b14-1805-40f6-a1c2-81e6e53fad9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Zlib_Hdr">
+      <UniqueIdentifier>{1aaf456b-604b-40f3-b371-38826e90bfd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Compress_Hdr">
+      <UniqueIdentifier>{6bb21fa8-28bc-4146-85bf-f4c01e514cb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Package_Hdr">
+      <UniqueIdentifier>{a6ee2143-2667-4943-b267-73e74cd91412}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Str_Hdr">
+      <UniqueIdentifier>{58a33e43-cc61-49c3-80c5-f00b918766e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Hash_Hdr">
+      <UniqueIdentifier>{4a119cb4-027b-45a1-aa84-0cb57cb4b41b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\whcmn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whlist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whqueue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whstreambuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whtransaction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whbugfind.cpp">
+      <Filter>Source Files\Dbg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whcmn_locallogger.cpp">
+      <Filter>Source Files\Dbg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whdbg.cpp">
+      <Filter>Source Files\Dbg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whdbgmem.cpp">
+      <Filter>Source Files\Dbg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whlog.cpp">
+      <Filter>Source Files\Dbg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whid.cpp">
+      <Filter>Source Files\ID</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whthread.cpp">
+      <Filter>Source Files\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whdir.cpp">
+      <Filter>Source Files\File</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whfile.cpp">
+      <Filter>Source Files\File</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whfile_fcd.cpp">
+      <Filter>Source Files\File</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whfile_util.cpp">
+      <Filter>Source Files\File</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whfileparse.cpp">
+      <Filter>Source Files\File</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whdaemon_linux.cpp">
+      <Filter>Source Files\Process</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whprocess.cpp">
+      <Filter>Source Files\Process</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whtime.cpp">
+      <Filter>Source Files\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whtimeevent.cpp">
+      <Filter>Source Files\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whtimequeue.cpp">
+      <Filter>Source Files\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whdataini.cpp">
+      <Filter>Source Files\DataProp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whdataprop.cpp">
+      <Filter>Source Files\DataProp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whcmd.cpp">
+      <Filter>Source Files\Automation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whstatusworker.cpp">
+      <Filter>Source Files\Automation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whmemfile.cpp">
+      <Filter>Source Files\Mem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whmemfileman.cpp">
+      <Filter>Source Files\Mem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whmemfilewritecache.cpp">
+      <Filter>Source Files\Mem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whmemfilewritecache_i.cpp">
+      <Filter>Source Files\Mem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whpipe.cpp">
+      <Filter>Source Files\IPC</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whshm.cpp">
+      <Filter>Source Files\IPC</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whshm_linux.cpp">
+      <Filter>Source Files\IPC</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whshm_win.cpp">
+      <Filter>Source Files\IPC</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whsignal.cpp">
+      <Filter>Source Files\IPC</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whunitallocator.cpp">
+      <Filter>Source Files\Alloc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whdll.cpp">
+      <Filter>Source Files\DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whdll_linux.cpp">
+      <Filter>Source Files\DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whdll_win.cpp">
+      <Filter>Source Files\DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whbits.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whbox.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whgamesight.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wh_crypt_interface.cpp">
+      <Filter>Source Files\Crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whbase64.cpp">
+      <Filter>Source Files\Crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whcrc.cpp">
+      <Filter>Source Files\Crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whdes.cpp">
+      <Filter>Source Files\Crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whdhkey.cpp">
+      <Filter>Source Files\Crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whmd5.cpp">
+      <Filter>Source Files\Crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whrsa.cpp">
+      <Filter>Source Files\Crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whzio.cpp">
+      <Filter>Source Files\Zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whzlib.cpp">
+      <Filter>Source Files\Zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whzlib_i.cpp">
+      <Filter>Source Files\Zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whzlib_pck.cpp">
+      <Filter>Source Files\Zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whzlib_pck_i.cpp">
+      <Filter>Source Files\Zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wh_compress_interface.cpp">
+      <Filter>Source Files\Compress</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wh_package_base.cpp">
+      <Filter>Source Files\Package</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wh_package_fileman.cpp">
+      <Filter>Source Files\Package</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wh_package_singlefile.cpp">
+      <Filter>Source Files\Package</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wh_package_util.cpp">
+      <Filter>Source Files\Package</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whgoodstr.cpp">
+      <Filter>Source Files\Str</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whstring.cpp">
+      <Filter>Source Files\Str</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\wh_platform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whcmn_def.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whDList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whqueue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whstl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whstreambuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whtransaction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whvector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whbugfind.h">
+      <Filter>Header Files\Dbg_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whcmn_locallogger.h">
+      <Filter>Header Files\Dbg_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whdbg.h">
+      <Filter>Header Files\Dbg_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whdbgmem.h">
+      <Filter>Header Files\Dbg_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whlog.h">
+      <Filter>Header Files\Dbg_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whid.h">
+      <Filter>Header Files\ID_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whlock.h">
+      <Filter>Header Files\Thread_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whthread.h">
+      <Filter>Header Files\Thread_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whdir.h">
+      <Filter>Header Files\File_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whfile.h">
+      <Filter>Header Files\File_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whfile_base.h">
+      <Filter>Header Files\File_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whfile_fcd.h">
+      <Filter>Header Files\File_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whfile_util.h">
+      <Filter>Header Files\File_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whfileparse.h">
+      <Filter>Header Files\File_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whdaemon.h">
+      <Filter>Header Files\Process_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whprocess.h">
+      <Filter>Header Files\Process_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whtime.h">
+      <Filter>Header Files\Time_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whtimeevent.h">
+      <Filter>Header Files\Time_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whtimequeue.h">
+      <Filter>Header Files\Time_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whdataini.h">
+      <Filter>Header Files\DataProp_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whdataobj.h">
+      <Filter>Header Files\DataProp_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whdataobj_def.h">
+      <Filter>Header Files\DataProp_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whdataprop.h">
+      <Filter>Header Files\DataProp_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whcmd.h">
+      <Filter>Header Files\Automation_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whstatusworker.h">
+      <Filter>Header Files\Automation_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whgener.h">
+      <Filter>Header Files\Calc_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whticker.h">
+      <Filter>Header Files\Calc_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whmemfile.h">
+      <Filter>Header Files\Mem_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whmemfilewritecache.h">
+      <Filter>Header Files\Mem_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whmemfilewritecache_i.h">
+      <Filter>Header Files\Mem_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whpipe.h">
+      <Filter>Header Files\IPC_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whshm.h">
+      <Filter>Header Files\IPC_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whshm_cmn.h">
+      <Filter>Header Files\IPC_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whshm_linux.h">
+      <Filter>Header Files\IPC_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whshm_win.h">
+      <Filter>Header Files\IPC_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whsignal.h">
+      <Filter>Header Files\IPC_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whallocator.h">
+      <Filter>Header Files\Alloc_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whallocator2.h">
+      <Filter>Header Files\Alloc_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whallocmgr2.h">
+      <Filter>Header Files\Alloc_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whchunk.h">
+      <Filter>Header Files\Alloc_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whunitallocator.h">
+      <Filter>Header Files\Alloc_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whunitallocator2.h">
+      <Filter>Header Files\Alloc_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whunitallocator3.h">
+      <Filter>Header Files\Alloc_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\wh_dllstaticmodule.h">
+      <Filter>Header Files\DLL_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whdll.h">
+      <Filter>Header Files\DLL_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whbits.h">
+      <Filter>Header Files\Math_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whbox.h">
+      <Filter>Header Files\Math_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whgamesight.h">
+      <Filter>Header Files\Math_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whmath.h">
+      <Filter>Header Files\Math_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whquadtree.h">
+      <Filter>Header Files\Math_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\wh_crypt_interface.h">
+      <Filter>Header Files\Crypt_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whbase64.h">
+      <Filter>Header Files\Crypt_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whcrc.h">
+      <Filter>Header Files\Crypt_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whdes.h">
+      <Filter>Header Files\Crypt_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whdhkey.h">
+      <Filter>Header Files\Crypt_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whmd5.h">
+      <Filter>Header Files\Crypt_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whrsa.h">
+      <Filter>Header Files\Crypt_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whzio.h">
+      <Filter>Header Files\Zlib_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whzlib.h">
+      <Filter>Header Files\Zlib_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whzlib_i.h">
+      <Filter>Header Files\Zlib_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whzlib_pck.h">
+      <Filter>Header Files\Zlib_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whzlib_pck_i.h">
+      <Filter>Header Files\Zlib_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\wh_compress_interface.h">
+      <Filter>Header Files\Compress_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\wh_package_base.h">
+      <Filter>Header Files\Package_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\wh_package_def.h">
+      <Filter>Header Files\Package_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\wh_package_fileman.h">
+      <Filter>Header Files\Package_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\wh_package_fileman_i.h">
+      <Filter>Header Files\Package_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\wh_package_singlefile.h">
+      <Filter>Header Files\Package_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\wh_package_util.h">
+      <Filter>Header Files\Package_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whgoodstr.h">
+      <Filter>Header Files\Str_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whstring.h">
+      <Filter>Header Files\Str_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whhash.h">
+      <Filter>Header Files\Hash_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whhash2.h">
+      <Filter>Header Files\Hash_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whhash_base.h">
+      <Filter>Header Files\Hash_Hdr</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

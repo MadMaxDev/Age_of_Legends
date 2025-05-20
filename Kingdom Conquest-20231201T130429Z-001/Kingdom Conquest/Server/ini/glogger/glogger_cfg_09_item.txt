@@ -1,0 +1,3 @@
+#define	PORT	2009
+#define	NAME	item
+#include	glogger_cmn.txt

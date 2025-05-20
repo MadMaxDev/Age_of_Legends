@@ -1,0 +1,3 @@
+#define	PORT	2005
+#define	NAME	datarecover
+#include	glogger_cmn.txt

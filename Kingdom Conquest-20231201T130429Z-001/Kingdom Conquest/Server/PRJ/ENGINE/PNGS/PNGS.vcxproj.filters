@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{3e2db519-b119-424c-a7bc-f7c85c6cfce5}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\GMS">
+      <UniqueIdentifier>{3c98c15c-fbc5-4fc3-a913-6bd18f99456e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GMS\MAINSTRUCTURE">
+      <UniqueIdentifier>{0d2c723e-5647-4b98-a27f-76544aaa290b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CAAFS">
+      <UniqueIdentifier>{6c6d9a01-7c35-469d-a663-176777f2f677}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CLS">
+      <UniqueIdentifier>{8fd2f93c-0470-496c-a691-1311bdc009e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GZS">
+      <UniqueIdentifier>{fb3218e3-1750-4480-8ef4-9caf6baab46f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Client">
+      <UniqueIdentifier>{2576cdaf-5bbd-452a-8e57-258193d15ab5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TCPReceiver">
+      <UniqueIdentifier>{f7f2a223-481a-42c3-8294-c4bd4409a3cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MEM">
+      <UniqueIdentifier>{e47d1e30-d8f9-46b2-85fd-3ecac91e4521}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{0097dfc4-fd50-4264-bc76-266b419d9969}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Header Files\GMS_Hdr">
+      <UniqueIdentifier>{e3cd3022-2940-4d4b-a5b2-57ddc1a7b6de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CAAFS_Hdr">
+      <UniqueIdentifier>{ab685a47-fab2-47c4-b6b7-a7e0391e8453}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CLS_Hdr">
+      <UniqueIdentifier>{99bc8ead-3fb7-4bff-b64e-6d2aa8e40b8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GZS_Hdr">
+      <UniqueIdentifier>{58241430-f851-48c0-a5c0-51531a27d4e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Client_Hdr">
+      <UniqueIdentifier>{47c1cb0f-bf93-4359-ab7e-975f409aeb3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TCPReceiver_Hdr">
+      <UniqueIdentifier>{27efbd65-6abe-4b99-9499-6cd589ce4b25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MEM_Hdr">
+      <UniqueIdentifier>{6f81d404-c7a5-4753-8ea7-3b10a4c7ebe2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\pngs_cmn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngs_cmn_dll.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\XCMNSVR_Lib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngs_gms_i.cpp">
+      <Filter>Source Files\GMS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngs_gms_i_GMS_MAINSTRUCTURE.cpp">
+      <Filter>Source Files\GMS\MAINSTRUCTURE</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngs_gms_i_GMS_MAINSTRUCTURE_BeforeDeleteConnecter.cpp">
+      <Filter>Source Files\GMS\MAINSTRUCTURE</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngs_gms_i_GMS_MAINSTRUCTURE_CmdIn.cpp">
+      <Filter>Source Files\GMS\MAINSTRUCTURE</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngs_gms_i_GMS_MAINSTRUCTURE_CNTR_DealMsg_CAAFS.cpp">
+      <Filter>Source Files\GMS\MAINSTRUCTURE</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngs_gms_i_GMS_MAINSTRUCTURE_CNTR_DealMsg_CLS.cpp">
+      <Filter>Source Files\GMS\MAINSTRUCTURE</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngs_gms_i_GMS_MAINSTRUCTURE_CNTR_DealMsg_Dft.cpp">
+      <Filter>Source Files\GMS\MAINSTRUCTURE</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngs_gms_i_GMS_MAINSTRUCTURE_CNTR_DealMsg_GMTOOL.cpp">
+      <Filter>Source Files\GMS\MAINSTRUCTURE</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngs_gms_i_GMS_MAINSTRUCTURE_CNTR_DealMsg_GZS.cpp">
+      <Filter>Source Files\GMS\MAINSTRUCTURE</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngs_gms_i_GMS_MAINSTRUCTURE_DealTE.cpp">
+      <Filter>Source Files\GMS\MAINSTRUCTURE</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngs_gms_i_GMS_MAINSTRUCTURE_DealTstStr.cpp">
+      <Filter>Source Files\GMS\MAINSTRUCTURE</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngs_gms_i_GMS_MAINSTRUCTURE_RemovePlayerUnit.cpp">
+      <Filter>Source Files\GMS\MAINSTRUCTURE</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngs_gms_i_GMS_MAINSTRUCTURE_Send.cpp">
+      <Filter>Source Files\GMS\MAINSTRUCTURE</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngs_caafs_i.cpp">
+      <Filter>Source Files\CAAFS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngs_caafs_i_DealStrCmd.cpp">
+      <Filter>Source Files\CAAFS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngs_caafs_i_Tick.cpp">
+      <Filter>Source Files\CAAFS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngs_caafs_i_Tick_DealClientMsg.cpp">
+      <Filter>Source Files\CAAFS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngs_caafs_i_Tick_DealGMSMsg.cpp">
+      <Filter>Source Files\CAAFS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngs_caafs_i_Tick_DealQueue.cpp">
+      <Filter>Source Files\CAAFS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngs_caafs_i_Tick_DealTE.cpp">
+      <Filter>Source Files\CAAFS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngs_cls_i.cpp">
+      <Filter>Source Files\CLS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngs_cls_i_Tick.cpp">
+      <Filter>Source Files\CLS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngs_cls_i_Tick_Deal_CmnSvrMsg.cpp">
+      <Filter>Source Files\CLS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngs_cls_i_Tick_DealClientMsg.cpp">
+      <Filter>Source Files\CLS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngs_cls_i_Tick_DealGMSMsg.cpp">
+      <Filter>Source Files\CLS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngs_cls_i_Tick_DealGZSMsg.cpp">
+      <Filter>Source Files\CLS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngs_cls_i_Tick_DealTE.cpp">
+      <Filter>Source Files\CLS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngs_gzs_i_GZS_MAINSTRUCTURE.cpp">
+      <Filter>Source Files\GZS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngs_gzs_i_GZS_MAINSTRUCTURE_BeforeDeleteConnecter.cpp">
+      <Filter>Source Files\GZS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngs_gzs_i_GZS_MAINSTRUCTURE_CmdIn.cpp">
+      <Filter>Source Files\GZS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngs_gzs_i_GZS_MAINSTRUCTURE_CNTR_DealMsg_CLS.cpp">
+      <Filter>Source Files\GZS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngs_gzs_i_GZS_MAINSTRUCTURE_CNTR_DealMsg_Dft.cpp">
+      <Filter>Source Files\GZS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngs_gzs_i_GZS_MAINSTRUCTURE_DealTE.cpp">
+      <Filter>Source Files\GZS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngs_gzs_i_GZS_MAINSTRUCTURE_RemovePlayerUnit.cpp">
+      <Filter>Source Files\GZS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngs_gzs_i_GZS_MAINSTRUCTURE_Send.cpp">
+      <Filter>Source Files\GZS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngs_gzs_i_GZS_MAINSTRUCTURE_Tick_DealGMSMsg.cpp">
+      <Filter>Source Files\GZS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngs_client_i.cpp">
+      <Filter>Source Files\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngs_client_i_SetStatus.cpp">
+      <Filter>Source Files\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngs_client_i_Tick.cpp">
+      <Filter>Source Files\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngs_TCPReceiver.cpp">
+      <Filter>Source Files\TCPReceiver</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GSMEM_i.cpp">
+      <Filter>Source Files\MEM</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GSMEM_i_CmdIn.cpp">
+      <Filter>Source Files\MEM</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GSMEM_i_Tick_DealTE.cpp">
+      <Filter>Source Files\MEM</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\pngs_cmn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\pngs_def.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\pngs_packet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\pngs_packet_client_logic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\pngs_packet_gms_logic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\pngs_packet_gzs_logic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\pngs_packet_logic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\pngs_packet_mem_logic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\XCMNSVR_Lib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\pngs_gms.h">
+      <Filter>Header Files\GMS_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\pngs_gms_i.h">
+      <Filter>Header Files\GMS_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\pngs_gms_i_GMS_MAINSTRUCTURE.h">
+      <Filter>Header Files\GMS_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\pngs_caafs.h">
+      <Filter>Header Files\CAAFS_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\pngs_caafs_i.h">
+      <Filter>Header Files\CAAFS_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\pngs_cls.h">
+      <Filter>Header Files\CLS_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\pngs_cls_i.h">
+      <Filter>Header Files\CLS_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\pngs_gzs.h">
+      <Filter>Header Files\GZS_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\pngs_gzs_i_GZS_MAINSTRUCTURE.h">
+      <Filter>Header Files\GZS_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\pngs_client.h">
+      <Filter>Header Files\Client_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\pngs_client_i.h">
+      <Filter>Header Files\Client_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\pngs_TCPReceiver.h">
+      <Filter>Header Files\TCPReceiver_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\pngs_TCPReceiver_def.h">
+      <Filter>Header Files\TCPReceiver_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\GSMEM_i.h">
+      <Filter>Header Files\MEM_Hdr</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

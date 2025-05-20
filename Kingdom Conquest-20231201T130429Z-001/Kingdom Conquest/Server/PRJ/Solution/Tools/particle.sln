@@ -1,0 +1,53 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Core", "..\..\ENGINE\Core\CoreDll.vcproj", "{4FA31410-53ED-4192-89B8-68687669CD44}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Device", "..\..\ENGINE\Device\Device.vcproj", "{EDC8D607-ED19-410B-9DB0-FAE358CFB1F6}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UI_3D", "..\..\ENGINE\UI_3D\UI_3D.vcproj", "{45338E92-1774-4C4F-A5A0-6B7FB51B8522}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TextureListEditor", "..\..\Tools\TextureListEditor\TextureListEditor.vcproj", "{EF90C1E1-1F98-449C-9E3B-DA898CA36343}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SpecialFXEditor", "..\..\Tools\SpecialFXEditor\SpecialFXEditor.vcproj", "{03ADB288-C077-4FDD-90DD-DA8857255AEF}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{4FA31410-53ED-4192-89B8-68687669CD44}.Debug.ActiveCfg = Debug|Win32
+		{4FA31410-53ED-4192-89B8-68687669CD44}.Debug.Build.0 = Debug|Win32
+		{4FA31410-53ED-4192-89B8-68687669CD44}.Release.ActiveCfg = Release|Win32
+		{4FA31410-53ED-4192-89B8-68687669CD44}.Release.Build.0 = Release|Win32
+		{EDC8D607-ED19-410B-9DB0-FAE358CFB1F6}.Debug.ActiveCfg = Debug|Win32
+		{EDC8D607-ED19-410B-9DB0-FAE358CFB1F6}.Debug.Build.0 = Debug|Win32
+		{EDC8D607-ED19-410B-9DB0-FAE358CFB1F6}.Release.ActiveCfg = Release|Win32
+		{EDC8D607-ED19-410B-9DB0-FAE358CFB1F6}.Release.Build.0 = Release|Win32
+		{45338E92-1774-4C4F-A5A0-6B7FB51B8522}.Debug.ActiveCfg = Debug|Win32
+		{45338E92-1774-4C4F-A5A0-6B7FB51B8522}.Debug.Build.0 = Debug|Win32
+		{45338E92-1774-4C4F-A5A0-6B7FB51B8522}.Release.ActiveCfg = Release|Win32
+		{45338E92-1774-4C4F-A5A0-6B7FB51B8522}.Release.Build.0 = Release|Win32
+		{EF90C1E1-1F98-449C-9E3B-DA898CA36343}.Debug.ActiveCfg = Debug|Win32
+		{EF90C1E1-1F98-449C-9E3B-DA898CA36343}.Debug.Build.0 = Debug|Win32
+		{EF90C1E1-1F98-449C-9E3B-DA898CA36343}.Release.ActiveCfg = Release|Win32
+		{EF90C1E1-1F98-449C-9E3B-DA898CA36343}.Release.Build.0 = Release|Win32
+		{03ADB288-C077-4FDD-90DD-DA8857255AEF}.Debug.ActiveCfg = Debug|Win32
+		{03ADB288-C077-4FDD-90DD-DA8857255AEF}.Debug.Build.0 = Debug|Win32
+		{03ADB288-C077-4FDD-90DD-DA8857255AEF}.Release.ActiveCfg = Release|Win32
+		{03ADB288-C077-4FDD-90DD-DA8857255AEF}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

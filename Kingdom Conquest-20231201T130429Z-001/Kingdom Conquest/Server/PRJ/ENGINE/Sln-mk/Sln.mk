@@ -1,0 +1,2 @@
+PRJS	:= WHCMN WHNET PNGS ScriptSDK DIA 
+#Core

@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{f694044f-fc37-4255-a6b1-4357ad42294a}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\CNL2">
+      <UniqueIdentifier>{409736ee-64d4-4143-a792-5ed59aa2af67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\http">
+      <UniqueIdentifier>{334f1024-497a-43b7-baff-e6ae2844f094}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Proxy">
+      <UniqueIdentifier>{5ed27ec9-11bf-4ad0-8430-eb54b88b9d32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Epoll">
+      <UniqueIdentifier>{307e0bb1-838c-4151-b374-605f6a2fd1f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{78865558-1c55-43dd-8f50-06c4fc33cc03}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Header Files\CNL2_Hdr">
+      <UniqueIdentifier>{37f4449f-d9d5-430b-8523-83fa34086279}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\http_Hdr">
+      <UniqueIdentifier>{31c83c07-3866-4ced-8e55-66d5516d2e50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Proxy_Hdr">
+      <UniqueIdentifier>{928163af-bd3e-44df-b18b-ed2a1a137101}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Epoll_Hdr">
+      <UniqueIdentifier>{64bf318e-3e8c-4b40-ab3a-08e9bdffca15}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\whconnecter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whnetcmn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whnetGenericSvrCli.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whnetGenericSvrCli_SMPTCP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whnethttp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whnetlocaliccup_i.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whnetNFS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whnetraw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whnettcp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whnetudp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whnetudpGLogger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whnetudpLister.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whnetcnl2.cpp">
+      <Filter>Source Files\CNL2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whnetcnl2_i.cpp">
+      <Filter>Source Files\CNL2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whnetcnl2_i_Recv.cpp">
+      <Filter>Source Files\CNL2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whnetcnl2_i_Send.cpp">
+      <Filter>Source Files\CNL2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whnetcnl2_i_TEDeal.cpp">
+      <Filter>Source Files\CNL2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whnetcnl2_i_TickRecv.cpp">
+      <Filter>Source Files\CNL2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whnetcnl2_pinger.cpp">
+      <Filter>Source Files\CNL2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lHttpGet.cpp">
+      <Filter>Source Files\http</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lSocket.cpp">
+      <Filter>Source Files\http</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whnetudpProxy.cpp">
+      <Filter>Source Files\Proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whnetepoll.cpp">
+      <Filter>Source Files\Epoll</Filter>
+    </ClCompile>
+    <ClCompile Include="src\whnetepoll_client.cpp">
+      <Filter>Source Files\Epoll</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\whconnecter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whnet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whnet_def.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whnetcmn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whnetGenericSvrCli.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whnetGenericSvrCli_SMPTCP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whnethttp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whnetlocalhiccup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whnetlocalhiccup_i.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whnetNFS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whnetraw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whnettcp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whnetudp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whnetudpGLogger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whnetudpLister.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whnetcnl2.h">
+      <Filter>Header Files\CNL2_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whnetcnl2_i.h">
+      <Filter>Header Files\CNL2_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whnetcnl2_pinger.h">
+      <Filter>Header Files\CNL2_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\lHttpGet.h">
+      <Filter>Header Files\http_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\lSocket.h">
+      <Filter>Header Files\http_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whnetudpProxy.h">
+      <Filter>Header Files\Proxy_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whnetepoll.h">
+      <Filter>Header Files\Epoll_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whnetepoll_client.h">
+      <Filter>Header Files\Epoll_Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\whnetepoll_packet.h">
+      <Filter>Header Files\Epoll_Hdr</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

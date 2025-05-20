@@ -1,0 +1,57 @@
+#include ../cmncfg.txt
+
+#define	SERVERNAME	XDBS4Web
+
+CMN
+{
+	// 本地字符集
+	szCharSet	= $(LOCAL_CHARSET)
+
+	szSvrName	= $(SERVERNAME)
+	bDaemon		= true
+	szLoggerAddr	= $(LOGADDRSTR_1)
+	nSelectInterval	= 50
+	szPIDFile	= $(SERVERNAME)-$(SVRGRPID).pid
+	
+	// 支持多线程，只要这个写了，下面的DLL前面的线程标记才有效
+	bSupportMT	= true
+	// 添加这个才能免去自动commit（不设置的话，存储过程出问题就不能rollback了）
+	ENV			= IPGW_COMMROLL_FLAG,0
+}
+PlugIn
+{
+	DLL		= 0, ./TCPReceiver$(CFGEXT).so, TCPReceiver_Create
+	DLL		= 0, ./DBS4Web$(CFGEXT).so, DBS4Web_Create
+}
+TCPRECEIVER
+{
+	nMaxCmdPerSec	= 5000
+	nQueueCmdInSize	= 50*1024*1024
+	CNTRSVR
+	{
+		nPort   = $(PORT_XDBS4WEB)+$(PORTSHIFT)
+		szIP    = $(XDBS4WEBINNERIP)
+	}
+	MSGER
+	{
+	}
+}
+
+DBS4Web
+{
+		nSvrGrpID				= $(SVRGRPID)
+		nThreadNum				= 10						//线程数量
+		nCmdQueueSize			= 50*1024*1024				//指令队列大小
+		nCheckThreadActiveInterval	= 10*1000				//多久检查一次线程是否依然存活(单位ms)
+		MYSQLInfo
+		{
+			szMysqlHost		= $(DB4WEB_HOST)
+			nMysqlPort		= $(DB4WEB_PORT)
+			szMysqlUser		= $(DB4WEB_USER)
+			szMysqlPass		= $(DB4WEB_PASSWORD)
+			szMysqlDB		= $(DB4WEB_DB)
+			szMysqlCharset		= $(DB4WEB_CHARSET)
+			szMysqlSocket		= $(DB4WEB_SOCKET)
+		}
+}
+

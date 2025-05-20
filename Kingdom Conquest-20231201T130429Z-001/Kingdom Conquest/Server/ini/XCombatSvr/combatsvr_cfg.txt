@@ -1,0 +1,32 @@
+#include ../cmncfg.txt
+
+#define	SERVERNAME	XCombatSvr
+
+CMN
+{
+	bDaemon		= true
+	nKillWaitTimeOut	= 10*60*1000
+	nSleepInterval		= 200
+	nCheckCFGInterval	= 10*1000
+	szLoggerAddr		= $(LOGADDRSTR_1)
+
+	szSvrName	= $(SERVERNAME)
+	szPIDFile	= $(SERVERNAME).pid
+	
+	// 添加这个才能免去自动commit（不设置的话，存储过程出问题就不能rollback了）
+	ENV			= IPGW_COMMROLL_FLAG,0
+}
+
+CombatSvr
+{
+		MYSQLInfo
+		{
+			szMysqlHost			= $(DB4WEB_HOST)
+			nMysqlPort			= $(DB4WEB_PORT)
+			szMysqlUser			= $(DB4WEB_USER)
+			szMysqlPass			= $(DB4WEB_PASSWORD)
+			szMysqlDB			= $(DB4WEB_DB)
+			szMysqlCharset		= $(DB4WEB_CHARSET)
+			szMysqlSocket		= $(DB4WEB_SOCKET)
+		}
+}

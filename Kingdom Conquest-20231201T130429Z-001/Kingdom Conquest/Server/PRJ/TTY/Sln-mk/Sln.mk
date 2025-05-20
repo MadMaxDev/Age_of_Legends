@@ -1,0 +1,1 @@
+PRJS	:= Common glogger XCMNSVR TCPReceiver DBS4Web_Lib DBS4Web GSDB4Web_Lib GSDB4Web CLS4Web_Lib CLS4Web CAAFS4Web_Lib CAAFS4Web LPMainStructure4Web_Lib LPMainStructure4Web LPGamePlay4Web_Lib LPGamePlay4Web XClient4Web GS4Web_Lib GS4Web XBDClient4Web BD4Web_Lib BD4Web GDB4Web_Lib GDB4Web XExcelDeploy XCombatSvr

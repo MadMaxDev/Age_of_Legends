@@ -1,0 +1,58 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Core", "..\..\Engine\Core\CoreDll.vcproj", "{4FA31410-53ED-4192-89B8-68687669CD44}"
+	ProjectSection(ProjectDependencies) = postProject
+		{96BBD710-F10A-40F7-A8AB-D0102B985CEB} = {96BBD710-F10A-40F7-A8AB-D0102B985CEB}
+		{020CDDD2-4A25-437C-B930-F67C46741D99} = {020CDDD2-4A25-437C-B930-F67C46741D99}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WHNET", "..\..\Engine\WHNET\WHNET.vcproj", "{020CDDD2-4A25-437C-B930-F67C46741D99}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WHCMN", "..\..\Engine\WHCMN\WHCMN.vcproj", "{96BBD710-F10A-40F7-A8AB-D0102B985CEB}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MidiPort", "..\..\Tools\MidiPort\MidiPort.vcproj", "{EDFCC371-7F6F-4183-8194-7BFCC404B90D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Reverb3DL2", "..\..\Tools\Reverb3DL2\Reverb3DL2.vcproj", "{19884AD3-39C2-4507-AA83-D76BB15C231E}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{4FA31410-53ED-4192-89B8-68687669CD44}.Debug.ActiveCfg = Debug|Win32
+		{4FA31410-53ED-4192-89B8-68687669CD44}.Debug.Build.0 = Debug|Win32
+		{4FA31410-53ED-4192-89B8-68687669CD44}.Release.ActiveCfg = Release|Win32
+		{4FA31410-53ED-4192-89B8-68687669CD44}.Release.Build.0 = Release|Win32
+		{020CDDD2-4A25-437C-B930-F67C46741D99}.Debug.ActiveCfg = Debug|Win32
+		{020CDDD2-4A25-437C-B930-F67C46741D99}.Debug.Build.0 = Debug|Win32
+		{020CDDD2-4A25-437C-B930-F67C46741D99}.Release.ActiveCfg = Release|Win32
+		{020CDDD2-4A25-437C-B930-F67C46741D99}.Release.Build.0 = Release|Win32
+		{96BBD710-F10A-40F7-A8AB-D0102B985CEB}.Debug.ActiveCfg = Debug|Win32
+		{96BBD710-F10A-40F7-A8AB-D0102B985CEB}.Debug.Build.0 = Debug|Win32
+		{96BBD710-F10A-40F7-A8AB-D0102B985CEB}.Release.ActiveCfg = Release|Win32
+		{96BBD710-F10A-40F7-A8AB-D0102B985CEB}.Release.Build.0 = Release|Win32
+		{EDFCC371-7F6F-4183-8194-7BFCC404B90D}.Debug.ActiveCfg = Debug|Win32
+		{EDFCC371-7F6F-4183-8194-7BFCC404B90D}.Debug.Build.0 = Debug|Win32
+		{EDFCC371-7F6F-4183-8194-7BFCC404B90D}.Release.ActiveCfg = Release|Win32
+		{EDFCC371-7F6F-4183-8194-7BFCC404B90D}.Release.Build.0 = Release|Win32
+		{19884AD3-39C2-4507-AA83-D76BB15C231E}.Debug.ActiveCfg = Debug|Win32
+		{19884AD3-39C2-4507-AA83-D76BB15C231E}.Debug.Build.0 = Debug|Win32
+		{19884AD3-39C2-4507-AA83-D76BB15C231E}.Release.ActiveCfg = Release|Win32
+		{19884AD3-39C2-4507-AA83-D76BB15C231E}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{203e4fe5-41f4-42f4-85e1-5c0d792d5f8a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\builder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\bytecode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\callfunc_x86.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\compiler.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\compiler2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\compiler3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\context.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\datatype.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\memmanager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\module.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\objecttype.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\parser.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\pixelscript.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\restore.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\scriptcode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\scriptengine.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\scriptfunction.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\scriptnode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\threadmanager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\tokenizer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\variablescope.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\stdstring.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\compiler.hpp">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\builder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\bytecode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\bytecodedef.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\callfunc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\compiler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\config.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\context.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\datatype.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\debugsymbol.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\macro.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\memmanager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\module.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\objecttype.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\operand.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\parser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pixelscript.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\restore.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\scriptcode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\scriptengine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\scriptfunction.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\scriptnode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\string.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\texts.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\threadmanager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\tokendef.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\tokenizer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\types.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\variablescope.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\stdmap.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\stdstring.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\stdvector.h">
+      <Filter>util</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ScriptSDK.Def">
+      <Filter>源文件</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,8 @@
+#include		../cmncfg.txt
+
+#define	QUICKDROP
+#define	GROUPID			0
+#define	CLS4WebIDX		1
+#define XCLS4WebOUTTERIP	$(XCLS4WebOUTTERIP1)
+
+#include cls4web_cfg_cmn.txt

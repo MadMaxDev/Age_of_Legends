@@ -1,0 +1,44 @@
+#include ../cmncfg.txt
+// 所有logger的公共信息定义在这里
+GLOGSVR
+{
+	bDaemon	= true
+	//nSelectInterval		= 100
+	//nKeepAliveTimeOut		= 60
+	//nMaxLogger			= 100
+	//bAppendTagName		= true
+	//bRawWrite				= false
+	szBindAddr			= $(LOGSVR):$(PORT)+$(PORTSHIFT)
+	//bReuseAddr			= true
+	szPIDFile				= glogger$(APPTYPE)-$(SVRGRPID)-$(PORT).pid
+}
+
+LOGWRITE
+{
+//	szLogFilePrefix			= /ITC/GameSvr0//$(NAME)/$(NAME)-
+	szLogFilePrefix			= $(LOGPATH)/$(NAME)/$(NAME)-
+	szLogFileSuffix			= .txt
+	// 0--文本，1--纯二进制
+	nOpenMode				= 0
+	// PROP_FNAME_DATE		= 0x0001,					// 文件名中是否有日期
+	// PROP_FNAME_TIME		= 0x0002,					// 文件名中是否有当前小时
+	// PROP_FNAME_EACHDAY	= 0x0004,					// 如果两天交替就新打开一个文件
+	// PROP_FNAME_OFOD		= 0x0008,					// 一天一个文件(有了这个就没有文件后面的index了)
+														// 这个也相当于PROP_FNAME_EACHDAY起作用，并且PROP_FNAME_TIME不起作用
+	// PROP_LINE_TIME		= 0x0010,					// 在每行增加日期和时间
+	// PROP_LINE_SMPTIME	= 0x0020,					// 在每行增加简单的日期和时间
+	// PROP_LINE_MS			= 0x0040,					// 在每行增加毫秒数
+	// PROP_LINE_AUTORN		= 0x0100,					// 日志行是否自动附加\r\n结尾，这个只对文本写入有效
+	// PROP_PRINTINSCREEN	= 0x1000,					// 是否同时在Console屏幕打印(这个对于主程序是daemon模式应该没有结果，即在linux则没有用)
+	//nProp					= 0x1157					// 我平时用的，默认是0x0127
+	//nProp					= 0x0128					// sohu需要的一天一个日志的配置
+	//nProp					= 0x3128
+	//nFileStartIdx			= 0
+#ifdef	WIN32
+	nProp					= 0x1127
+#else
+	nProp					= 0x0127
+#endif
+
+	nMaxPageSize			= 1024*1024*1024			// 默认1G换个文件吧
+}

@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{68D83E42-F302-47F6-B187-259641171203}</ProjectGuid>
+    <RootNamespace>ScriptSDK</RootNamespace>
+    <SccProjectName />
+    <SccAuxPath />
+    <SccLocalPath />
+    <SccProvider />
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../bin/$(Configuration)S\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\temp\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../bin/$(Configuration)S\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\temp\$(ProjectName)\$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pixelscript_d</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_USRDLL;PIXELSCRIPT_EXPORTS;_USE_32BIT_TIME_T;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)pixelscript_d.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ModuleDefinitionFile>ScriptSDK.Def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>
+      </AssemblyDebug>
+      <ProgramDatabaseFile>$(OutDir)$(ProjectName)_d.pdb</ProgramDatabaseFile>
+      <ImportLibrary>../../lib/pixelscript_d.lib</ImportLibrary>
+      <TargetMachine>NotSet</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_USRDLL;PIXELSCRIPT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)pixelscript.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ModuleDefinitionFile>ScriptSDK.Def</ModuleDefinitionFile>
+      <ProgramDatabaseFile>$(OutDir)$(ProjectName).pdb</ProgramDatabaseFile>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>../../lib/pixelscript.lib</ImportLibrary>
+      <TargetMachine>NotSet</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="source\builder.cpp" />
+    <ClCompile Include="source\bytecode.cpp" />
+    <ClCompile Include="source\callfunc_x86.cpp" />
+    <ClCompile Include="source\compiler.cpp" />
+    <ClCompile Include="source\compiler2.cpp" />
+    <ClCompile Include="source\compiler3.cpp" />
+    <ClCompile Include="source\context.cpp" />
+    <ClCompile Include="source\datatype.cpp" />
+    <ClCompile Include="source\memmanager.cpp" />
+    <ClCompile Include="source\module.cpp" />
+    <ClCompile Include="source\objecttype.cpp" />
+    <ClCompile Include="source\parser.cpp" />
+    <ClCompile Include="source\pixelscript.cpp" />
+    <ClCompile Include="source\restore.cpp" />
+    <ClCompile Include="source\scriptcode.cpp" />
+    <ClCompile Include="source\scriptengine.cpp" />
+    <ClCompile Include="source\scriptfunction.cpp" />
+    <ClCompile Include="source\scriptnode.cpp" />
+    <ClCompile Include="source\threadmanager.cpp" />
+    <ClCompile Include="source\tokenizer.cpp" />
+    <ClCompile Include="source\variablescope.cpp" />
+    <ClCompile Include="source\stdstring.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\compiler.hpp" />
+    <ClInclude Include="source\builder.h" />
+    <ClInclude Include="source\bytecode.h" />
+    <ClInclude Include="source\bytecodedef.h" />
+    <ClInclude Include="source\callfunc.h" />
+    <ClInclude Include="source\compiler.h" />
+    <ClInclude Include="source\config.h" />
+    <ClInclude Include="source\context.h" />
+    <ClInclude Include="source\datatype.h" />
+    <ClInclude Include="source\debugsymbol.h" />
+    <ClInclude Include="source\macro.h" />
+    <ClInclude Include="source\memmanager.h" />
+    <ClInclude Include="source\module.h" />
+    <ClInclude Include="source\objecttype.h" />
+    <ClInclude Include="source\operand.h" />
+    <ClInclude Include="source\parser.h" />
+    <ClInclude Include="include\pixelscript.h" />
+    <ClInclude Include="source\restore.h" />
+    <ClInclude Include="source\scriptcode.h" />
+    <ClInclude Include="source\scriptengine.h" />
+    <ClInclude Include="source\scriptfunction.h" />
+    <ClInclude Include="source\scriptnode.h" />
+    <ClInclude Include="source\string.h" />
+    <ClInclude Include="source\texts.h" />
+    <ClInclude Include="source\threadmanager.h" />
+    <ClInclude Include="source\tokendef.h" />
+    <ClInclude Include="source\tokenizer.h" />
+    <ClInclude Include="include\types.h" />
+    <ClInclude Include="source\variablescope.h" />
+    <ClInclude Include="include\stdmap.h" />
+    <ClInclude Include="include\stdstring.h" />
+    <ClInclude Include="include\stdvector.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ScriptSDK.Def" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

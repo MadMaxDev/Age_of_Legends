@@ -1,0 +1,3 @@
+#define	PORT	2010
+#define	NAME	npc
+#include	glogger_cmn.txt

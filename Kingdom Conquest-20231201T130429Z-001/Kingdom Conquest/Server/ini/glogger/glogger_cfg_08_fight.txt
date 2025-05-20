@@ -1,0 +1,3 @@
+#define	PORT	2008
+#define	NAME	fight
+#include	glogger_cmn.txt

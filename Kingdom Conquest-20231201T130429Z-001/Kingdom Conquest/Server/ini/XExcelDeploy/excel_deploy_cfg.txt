@@ -1,0 +1,21 @@
+#include ../cmncfg.txt
+ExcelDeploy
+{
+	bDeployToMySQL		= true
+	bDeployToWebUpdate	= true
+    // 所有操作用户根目录下必须先做好src的链接
+	szSrcDir		= $(HOME)/mb/
+	szWebUpdateDir		= /var/www/html/battleforempire/update/
+	szMBDir			= $(LOCAL_MB_DIR)
+
+	MYSQLInfo
+	{
+		szMysqlHost		= $(DB4WEB_HOST)
+		nMysqlPort		= $(DB4WEB_PORT)
+		szMysqlUser		= $(DB4WEB_USER)
+		szMysqlPass		= $(DB4WEB_PASSWORD)
+		szMysqlDB		= $(DB4WEB_DB)
+		szMysqlCharset		= $(DB4WEB_CHARSET)
+		szMysqlSocket		= $(DB4WEB_SOCKET)
+	}
+}

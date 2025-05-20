@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="gb2312"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="TCPReceiver"
+	ProjectGUID="{E8A0A040-960B-495F-9CD4-D689261F03D2}"
+	SccProjectName=""
+	SccAuxPath=""
+	SccLocalPath=""
+	SccProvider="">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="../../bin/$(ConfigurationName)/TTY/$(ProjectName)"
+			IntermediateDirectory="..\..\temp\$(ConfigurationName)\TTY\$(ProjectName)"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="0"
+				AdditionalIncludeDirectories="../../ENGINE"
+				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_USRDLL;GZSMAINSTRUCTURE_EXPORTS"
+				BasicRuntimeChecks="3"
+				RuntimeLibrary="3"
+				UsePrecompiledHeader="0"
+				PrecompiledHeaderFile="$(IntDir)/$(ProjectName).pch"
+				AssemblerListingLocation="$(IntDir)/"
+				ObjectFile="$(IntDir)/"
+				ProgramDataBaseFileName="$(IntDir)/"
+				WarningLevel="3"
+				SuppressStartupBanner="TRUE"
+				DebugInformationFormat="3"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions="..\..\lib\WHNET_d.lib 
+..\..\..\3rd\Lib\TinyXML_d.lib ..\..\lib\DIA_d.lib ..\..\lib\WHCMN_d.lib ..\..\lib\PNGS_d.lib ..\..\..\3rd\Lib\cryptlib_d.lib"
+				OutputFile="$(OutDir)/$(ProjectName)_d.so"
+				LinkIncremental="1"
+				SuppressStartupBanner="TRUE"
+				GenerateDebugInformation="TRUE"
+				ProgramDatabaseFile="$(OutDir)/$(ProjectName)_d.pdb"
+				ImportLibrary="$(IntDir)/$(ProjectName)_d.lib"
+				TargetMachine="1"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="_DEBUG"
+				MkTypLibCompatible="TRUE"
+				SuppressStartupBanner="TRUE"
+				TargetEnvironment="1"
+				TypeLibraryName=".\../../../Debug/BO2/TCPReceiver/TCPReceiver.tlb"
+				HeaderFileName=""/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				Description="拷贝模块到需要的服务器"
+				CommandLine="mkdir $(TargetDir)\..\XDBS4Web
+mkdir $(TargetDir)\..\XLP4Web
+mkdir $(TargetDir)\..\XGS4Web
+mkdir $(TargetDir)\..\XGDB4Web
+copy $(TargetPath) $(TargetDir)\..\XDBS4Web\ /V
+copy $(TargetPath) $(TargetDir)\..\XLP4Web\ /V
+copy $(TargetPath) $(TargetDir)\..\XGS4Web /V
+copy $(TargetPath) $(TargetDir)\..\XGDB4Web /V"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="_DEBUG"
+				Culture="2052"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="../../bin/$(ConfigurationName)/TTY/$(ProjectName)"
+			IntermediateDirectory="..\..\temp\$(ConfigurationName)\TTY\$(ProjectName)"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="2"
+				InlineFunctionExpansion="1"
+				AdditionalIncludeDirectories="../../ENGINE"
+				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_USRDLL;GZSMAINSTRUCTURE_EXPORTS"
+				StringPooling="TRUE"
+				RuntimeLibrary="2"
+				EnableFunctionLevelLinking="TRUE"
+				UsePrecompiledHeader="0"
+				PrecompiledHeaderFile="$(IntDir)/$(ProjectName).pch"
+				AssemblerListingLocation="$(IntDir)/"
+				ObjectFile="$(IntDir)/"
+				ProgramDataBaseFileName="$(IntDir)/"
+				WarningLevel="3"
+				SuppressStartupBanner="TRUE"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				OutputFile="$(OutDir)/$(ProjectName).so"
+				LinkIncremental="1"
+				SuppressStartupBanner="TRUE"
+				ProgramDatabaseFile="$(OutDir)/$(ProjectName).pdb"
+				ImportLibrary="$(IntDir)/$(ProjectName).lib"
+				TargetMachine="1"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="NDEBUG"
+				MkTypLibCompatible="TRUE"
+				SuppressStartupBanner="TRUE"
+				TargetEnvironment="1"
+				TypeLibraryName=".\../../../Release/BO2/TCPReceiver/TCPReceiver.tlb"
+				HeaderFileName=""/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				Description="拷贝模块到需要的服务器"
+				CommandLine="mkdir $(TargetDir)\..\XLBA
+mkdir $(TargetDir)\..\XNP
+mkdir $(TargetDir)\..\XGMGS
+mkdir $(TargetDir)\..\XGIS
+mkdir $(TargetDir)\..\XCC
+mkdir $(TargetDir)\..\XVerifyCode
+mkdir $(TargetDir)\..\XGCS
+copy $(TargetPath) $(TargetDir)\..\XLBA\ /V
+copy $(TargetPath) $(TargetDir)\..\XNP\ /V
+copy $(TargetPath) $(TargetDir)\..\XGMGS\ /V
+copy $(TargetPath) $(TargetDir)\..\XGIS\ /V
+copy $(TargetPath) $(TargetDir)\..\XCC\ /V
+copy $(TargetPath) $(TargetDir)\..\XVerifyCode\ /V
+copy $(TargetPath) $(TargetDir)\..\XGCS\ /V
+"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG"
+				Culture="2052"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat">
+			<File
+				RelativePath="src\TCPReceiver.cpp">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="0"
+						PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GZSMAINSTRUCTURE_EXPORTS;$(NoInherit)"
+						BasicRuntimeChecks="3"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_MBCS;_USRDLL;GZSMAINSTRUCTURE_EXPORTS;$(NoInherit)"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl">
+		</Filter>
+		<Filter
+			Name="Resource Files"
+			Filter="ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe">
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

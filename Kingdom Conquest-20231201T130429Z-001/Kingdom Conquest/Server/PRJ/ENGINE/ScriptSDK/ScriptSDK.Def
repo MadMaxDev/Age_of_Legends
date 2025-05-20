@@ -1,0 +1,10 @@
+LIBRARY	
+EXPORTS	
+psCreateScriptEngine @1  NONAME
+psGetLibraryVersion  @2  NONAME
+psCleanup			 @3  NONAME
+psGetDisassembleCode @4  NONAME
+psGetTokenDefinition @5  NONAME
+psGetActiveContext	 @6  NONAME
+psRegisterStdStringA @7  NONAME
+psRegisterStdStringW @8  NONAME

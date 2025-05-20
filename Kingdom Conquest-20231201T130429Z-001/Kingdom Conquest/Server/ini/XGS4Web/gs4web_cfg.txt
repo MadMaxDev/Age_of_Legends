@@ -1,0 +1,60 @@
+#include ../cmncfg.txt
+
+#define	SERVERNAME	XGS4Web
+
+CMN
+{
+	// 本地字符集
+	szCharSet	= $(LOCAL_CHARSET)
+
+	szSvrName	= $(SERVERNAME)
+	bDaemon		= true
+	szLoggerAddr	= $(LOGADDRSTR_1)
+	nSelectInterval	= 50
+	szPIDFile	= $(SERVERNAME).pid
+	
+	// 支持多线程，只要这个写了，下面的DLL前面的线程标记才有效
+	bSupportMT	= true
+	// 添加这个才能免去自动commit（不设置的话，Q币兑换给仙玉过程出问题就不能rollback了）
+	ENV			= IPGW_COMMROLL_FLAG,0
+}
+PlugIn
+{
+	DLL		= 0, ./TCPReceiver$(CFGEXT).so, TCPReceiver_Create
+	DLL		= 0, ./GS4Web$(CFGEXT).so, GS4Web_Create
+	DLL		= 0, ./BD4Web$(CFGEXT).so, BD4Web_Create
+}
+TCPRECEIVER
+{
+	nMaxCmdPerSec	= 5000
+        CNTRSVR
+        {
+                nPort   = $(PORT_XGS4Web)
+                szIP    = $(XGS4WebOUTERIP)
+        }
+//	MSGER
+//	{
+//		nSendBufSize		= 10*1024*1024
+//		nRecvBufSize		= 10*1024*1024
+//		nSockSndBufSize		= 5*1025*1024
+//		nSockRcvBufSize		= 5*1024*1024
+//	}
+}
+
+GS4Web
+{
+		nCmdQueueSize			= 20*1024*1024				//指令队列大小
+		szGDBAddr			= $(XGDB4WebOUTERIP):$(PORT_XGDB4Web)
+}
+BD4Web
+{
+	bNBO		= true
+	CNTRSVR
+	{
+		nMaxNum	= 16
+		nPort	= $(PORT_BD4Web)
+		szIP	= $(BD4WebOUTTERIP)
+	}
+	bBDSupport	= true
+}
+

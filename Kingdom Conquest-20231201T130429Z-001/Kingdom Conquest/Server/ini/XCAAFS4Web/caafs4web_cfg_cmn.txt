@@ -1,0 +1,31 @@
+#define	SERVERNAME	XCAAFS4Web
+CMN
+{
+	bDaemon			= true
+	szLoggerAddr		= $(LOGADDRSTR_2)
+	nSelectInterval		= 50
+	szSvrName               = $(SERVERNAME)
+	szPIDFile		= XCAAFS4Web-$(SVRGRPID)-$(GROUPID).pid
+}
+PlugIn
+{
+	DLL			= 0, ./CAAFS4Web$(CFGEXT).so, CAAFS4Web_Create
+}
+CAAFS4Web
+{
+	szWelcomeAddr		= $(XCAAFS4WebOUTTERIP):$(PORT_XCAAFS4Web)+$(PORTSHIFT)+$(GROUPID)
+	szLogicProxyAddr	= $(XLP4WebINNERIP):$(PORT_XLP4Web)+$(PORTSHIFT)
+	szVer				= $(VERSION)
+	
+	nClientConnectingNumMax	= 256
+	nHelloCheckTimeout	= 2000
+	nCloseCheckTimeout	= 4000
+	nQueueSeqSendInterval	= 5000
+	fWaitTransToConnectRate	= 32.f
+}
+EPOLL_SERVER
+{
+    iDropTimeout        = 10*60*1000
+	iKATimeout          = 3*1000
+	iCloseTimeout       = 6*1000
+}

@@ -1,0 +1,6 @@
+新appid上线需要做的工作:
+1.IAP相关
+	php/IAP/verify_receipt.php中bid_array[appid]='bid';(账单验证方法)
+2.update相关
+	update/update.php中ref_array[appid]='ref';(程序更新地址)
+	update/VERSION_XXX/index.php中$g_updatesite['version_appid']='ref';(mb更新地址)

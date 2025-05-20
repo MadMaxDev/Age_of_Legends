@@ -1,0 +1,127 @@
+/////////////////////////////////////////////////////
+//版本定义
+/////////////////////////////////////////////////////
+// 各种版本定义
+#define VERSION_INNER
+
+// 表明这是debug版
+#define	DEBUG
+
+// 表明这是内部调试用的，可以放宽一些限制
+#define	INNERDEBUG
+
+// 大区的ID
+#define	SVRGRPID	1	
+
+// 因为可能需要不同的版本都连接的相同的ims服务器，所以不能用VER_EXT来区分应用类型，只能用前面的APPTYPE
+#define	VER_EXT		_cur
+
+// 整组服务器最多支持的总人数
+#define MAXPLAYER	17000
+
+// 版本号
+#define VERSION 1.0
+
+//////////////////////////////////////////////////////
+// 本组配置的端口增量(主要用于在同一台机器上启动多组服务器)
+//////////////////////////////////////////////////////
+#define	PORTSHIFT	0
+#define	GPORTSHIFT	0
+//////////////////////////////////////////////////////
+
+#define APPTYPE		
+
+//////////////////////////////////////////////////////
+// 各个端口定义
+//////////////////////////////////////////////////////
+// 4200~4210 是对外端口，eth1上只要开这个即可
+#define	PORT_XCAAFS4Web		4200
+#define	PORT_XCLS4Web		4201
+#define PORT_XDBS4WEB		4100
+#define	PORT_XLP4Web		4101
+#define PORT_XLBA4Web		4102
+#define	PORT_XGS4Web		4103+$(GPORTSHIFT)
+#define	PORT_BD4Web			4104+$(GPORTSHIFT)
+#define PORT_XGDB4Web		4105+$(GPORTSHIFT)
+
+//////////////////////////////////////////////////////
+//各类服务器IP定义
+//////////////////////////////////////////////////////
+
+// 为了一台机器配置方便用的地址
+#define	ONEOUTERIP			192.168.1.10
+#define	ONEINNERIP			127.0.0.1
+#define	MYSQLIP				127.0.0.1
+
+// 日志服务器的地址
+#define	LOGSVR				$(ONEINNERIP)
+#define XDBS4WEBINNERIP		$(ONEINNERIP)
+#define XLP4WebINNERIP		$(ONEINNERIP)
+#define XGS4WebOUTERIP		$(ONEOUTERIP)
+#define	BD4WebOUTTERIP		$(ONEOUTERIP)
+#define XGDB4WebOUTERIP		$(ONEOUTERIP)
+
+#define	XCAAFS4WebOUTTERIP1	$(ONEOUTERIP)
+#define	XCAAFS4WebOUTTERIP2	$(ONEOUTERIP)
+
+#define	XCLS4WebOUTTERIP1	$(ONEOUTERIP)
+#define	XCLS4WebOUTTERIP2	$(ONEOUTERIP)
+#define	XCLS4WebOUTTERIP3	$(ONEOUTERIP)
+#define	XCLS4WebOUTTERIP4	$(ONEOUTERIP)
+#define	XCLS4WebOUTTERIP5	$(ONEOUTERIP)
+#define	XCLS4WebOUTTERIP6	$(ONEOUTERIP)
+#define	XCLS4WebOUTTERIP7	$(ONEOUTERIP)
+#define	XCLS4WebOUTTERIP8	$(ONEOUTERIP)
+
+
+/////////////////////////////////////////////////////////////
+//日志服务定义
+/////////////////////////////////////////////////////////////
+
+// 日志服务的描述串(根据各个服务器需求的不同分为下面三个等级)
+#define	LOGADDRSTR_0	0,$(LOGSVR):2000+$(PORTSHIFT), 1,$(LOGSVR):2001+$(PORTSHIFT), 2,$(LOGSVR):2002+$(PORTSHIFT), 3,$(LOGSVR):2003+$(PORTSHIFT), 4,$(LOGSVR):2004+$(PORTSHIFT)
+#define	LOGADDRSTR_1	0,$(LOGSVR):2000+$(PORTSHIFT), 1,$(LOGSVR):2001+$(PORTSHIFT), 2,$(LOGSVR):2002+$(PORTSHIFT), 3,$(LOGSVR):2003+$(PORTSHIFT), 4,$(LOGSVR):2004+$(PORTSHIFT), 5,$(LOGSVR):2005+$(PORTSHIFT), 6,$(LOGSVR):2006+$(PORTSHIFT), 13,$(LOGSVR):2013+$(PORTSHIFT)
+#define	LOGADDRSTR_2	0,$(LOGSVR):2000+$(PORTSHIFT), 1,$(LOGSVR):2001+$(PORTSHIFT), 2,$(LOGSVR):2002+$(PORTSHIFT), 3,$(LOGSVR):2003+$(PORTSHIFT), 4,$(LOGSVR):2004+$(PORTSHIFT), 5,$(LOGSVR):2005+$(PORTSHIFT), 6,$(LOGSVR):2006+$(PORTSHIFT), 7,$(LOGSVR):2007+$(PORTSHIFT), 8,$(LOGSVR):2008+$(PORTSHIFT), 9,$(LOGSVR):2009+$(PORTSHIFT), 10,$(LOGSVR):2010+$(PORTSHIFT), 11,$(LOGSVR):2011+$(PORTSHIFT), 12,$(LOGSVR):2012+$(PORTSHIFT), 13,$(LOGSVR):2013+$(PORTSHIFT), 14,$(LOGSVR):2014+$(PORTSHIFT)
+
+// 日志的根路径
+#define	LOGPATH			$(HOME)/log
+
+// 服务器间tcp通讯的消息缓冲设置
+#define	MSGBUFFLEN		10*1024*1024
+
+//////////////////////////////////////////////////////////
+//web扩展数据库定义
+//////////////////////////////////////////////////////////
+#define	DB4WEB_SOCKET		/var/lib/mysql/mysql.sock	
+#define	DB4WEB_USER			root
+#define	DB4WEB_PASSWORD		13974268
+#define	DB4WEB_CHARSET		utf8
+#define	DB4WEB_DB			web_$(SVRGRPID)
+#define	DB4WEB_HOST			$(MYSQLIP)
+#define	DB4WEB_PORT			3306
+
+//////////////////////////////////////////////////////////
+//web扩展全局数据库定义
+//////////////////////////////////////////////////////////
+#define	IMS_DB4WEB_SOCKET		$(DB4WEB_SOCKET)
+#define	IMS_DB4WEB_USER			$(DB4WEB_USER)
+#define	IMS_DB4WEB_PASSWORD		$(DB4WEB_PASSWORD)
+#define	IMS_DB4WEB_CHARSET		$(DB4WEB_CHARSET)
+#define	IMS_DB4WEB_DB			web_ims
+#define	IMS_DB4WEB_HOST			$(DB4WEB_HOST)
+#define	IMS_DB4WEB_PORT			$(DB4WEB_PORT)
+
+//////////////////////////////////////////////////////////
+//其他定义
+//////////////////////////////////////////////////////////
+
+// debug版的文件后缀
+#ifdef	DEBUG
+#define	CFGEXT		_d
+#else
+#define	CFGEXT
+#endif
+
+#define LOCAL_CHARSET			utf8
+
+#define LOCAL_MB_DIR			../excel_tables/

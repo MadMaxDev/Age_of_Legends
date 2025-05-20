@@ -1,0 +1,3 @@
+#define	PORT	2003
+#define	NAME	hack
+#include	glogger_cmn.txt

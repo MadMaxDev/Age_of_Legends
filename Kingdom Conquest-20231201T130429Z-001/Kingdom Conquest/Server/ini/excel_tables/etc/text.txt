@@ -1,0 +1,95 @@
+索引	文本
+1	STR+
+2	VIT+
+3	HP+
+4	COM+
+5	[FF0000]You've been fired by %%s from guild 【%%s】
+6	[FF0000]%%s has been fired by %%s from the guild
+7	You've quit guild 【%%s】
+8	[FF0000]%%s left the guild
+9	[00FF00]You've been appointed the guild's %%s
+10	[00FF00]%%s has been appointed the guild's %%s
+11	[00FF00]%%s is a worthy comrade for watering your Wishing Tree
+12	[FF0000]%%s robbed you of %%d gold
+13	[00FF00]You've been approve by %%s to join guild 【%%s】
+14	[00FF00]%%s joined the guild
+15	[FF0000]Your app to join guild 【%%s】 has been rejected
+16	[00FF00]%%s has given the chief position to %%s
+17	[FF0000]%%s has disbanded the guild
+18	[00FF00]%%s has set %%s's guild position to %%s
+19	[00FF00]Guild trade ended, got %%d gold
+20	%%s has donated %%d gold to the guild, increasing guild's development by %%d
+21	[00FF00]Congratulations to player [FFFF00]%%s[-] for getting [FFFF00]%%s x1[-] in the draw
+22	[00FF00]Congratulations to player [FFFF00]%%s[-] for getting [FFFF00]Crystals x%%d[-] in the draw
+23	[00FF00]Congratulations to player [FFFF00]%%s[-] for getting [FFFF00]Gold x%%d[-] in the draw
+100	You attack %%s1
+101	You are attacked by %%s1
+102	You attack area %%s1 No.%%d2 %%s3
+103	You attack %%s4 and occupied area %%s1 No.%%d2 %%s3
+104	Your occupied area %%s1 No.%%d2 %%s3 has been attacked by %%s4
+105	you win
+106	you lose
+111	Dusk Vale
+112	Snow Woods
+113	Hot Mine
+114	Sweet Plain
+115	Gold Vale
+116	Dark Ruins
+117	Storm Altar
+118	Giant Ruins
+121	Elite Mine
+122	Large Mine
+123	Average Mine
+124	Small Mine
+301	Brawler
+302	Wandering Troops
+303	Fervent Troops
+304	Fallen Acolyte
+305	Frenetic Acolyte
+400	Victor's Path Lv %%s1
+401	World Conquest Lv %%s1
+402	Victor's Path (%%s1) Lv %%s2
+403	World Conquest (%%s1) Lv %%s2
+410	attack
+411	won
+412	got
+416	Normal Mode
+417	Epic Mode
+421	Slave Camp
+422	Dark Alchemist City
+423	Mystery Alchemist City
+424	Smith Union
+425	Valor Fort
+426	Treasure Coast
+427	Crystal Site
+428	Skyfire Guard
+429	Skyfire Knight
+430	Skyfire Lord
+431	Return Of WarGod
+432	Wrath Of WarGod
+433	Revenge Of WarGod
+450	%%s1 Holy Grail
+451	%%s1 Valor City (%%s2,%%s3)
+452	Hard
+453	Norm
+454	Easy
+460	%%s1 has sent troops to attack guildsman %%s2, help is needed
+461	failed
+462	Valor City doesn't exist
+463	War of Valor Rewards:
+464	[00FF00]The worldmine has been reset. You lose occupation.[-]
+465	[FF0000]%%s has attacked guildsman %%s.[-]
+466	[00FF00]Guildsman %%s1 has sent troops Lv%%s2 %%s3 x%%s4 to help you.[-]
+467	[00FF00]You bought %%s1 gold, cost %%s2 diamond.[-]
+468	[00FF00]You sold %%s1 gold, earned %%s2 diamond.[-]
+469	[00FF00]Your gold deal has been cancelled by system(%%s1 gold).[-]
+470	[00FF00]You have cancelled your gold deal(%%s1 gold).[-]
+471	You attack fortress(%%s1,%%s2),you win. Loot 
+472	You attack fortress(%%s1,%%s2),you lose.
+473	You attack %%s1,you win. Loot 
+474	You attack %%s1,you lose. 
+475	%%s1 attack %%s2, loot 
+476	%%s1 has sent troops to attack %%s2
+477	You are defeated by %%s1 in arena. Your rank is changed to 
+478	Congratulations on your ranking %%s1 in the arena, reward gold 
+479	You pass %%s1 but loot nothing because your total force is 0. 

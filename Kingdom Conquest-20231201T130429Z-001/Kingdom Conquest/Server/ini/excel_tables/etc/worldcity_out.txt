@@ -1,0 +1,4 @@
+名城等级	奖杯产出量	单次掉落量	可选名字
+1	100	100	Hard Valor City
+2	50	50	Norm Valor City
+3	20	20	Easy Valor City

@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CF1B06E7-6200-4EE6-AAE0-7D3D3C9E9353}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\temp\$(Configuration)\TTY\$(ProjectName)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName)_d</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../ENGINE;../../GAME;../../../3RD;..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_USE_32BIT_TIME_T;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)LPGamePlay4Web_Lib_d.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)LPGamePlay4Web_Lib.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\AllianceMngS.cpp" />
+    <ClCompile Include="src\ChatMngS.cpp" />
+    <ClCompile Include="src\GameMngS.cpp" />
+    <ClCompile Include="src\GameMngS_Deal_TE.cpp" />
+    <ClCompile Include="src\InstanceMngS.cpp" />
+    <ClCompile Include="src\LotteryMngS.cpp" />
+    <ClCompile Include="src\LPGamePlay4Web_i.cpp" />
+    <ClCompile Include="src\LPGamePlay4Web_i_DealCmdIn.cpp" />
+    <ClCompile Include="src\LPGamePlay4Web_i_DealCmdIn_LPPACKET_2GP_PlayerCmd.cpp" />
+    <ClCompile Include="src\LPGamePlay4Web_i_DealDBCmd.cpp" />
+    <ClCompile Include="src\LPGamePlay4Web_i_DealTE.cpp" />
+    <ClCompile Include="src\LPGamePlay4Web_i_Player_Func.cpp" />
+    <ClCompile Include="src\LPGamePlay4Web_i_Send.cpp" />
+    <ClCompile Include="src\LPGamePlay4Web_i_Tick_DealGS4WebMsg.cpp" />
+    <ClCompile Include="src\LPGamePlay4Web_i_Transaction_CreateAccount.cpp" />
+    <ClCompile Include="src\LPGamePlay4Web_i_Transaction_CreateChar.cpp" />
+    <ClCompile Include="src\LPGamePlay4Web_i_Transaction_Login.cpp" />
+    <ClCompile Include="src\LPGamePlay4Web_i_Transaction_LoginByDeviceID.cpp" />
+    <ClCompile Include="src\NotificationMngS.cpp" />
+    <ClCompile Include="src\PlayerCardMngS.cpp" />
+    <ClCompile Include="src\PlayerMngS.cpp" />
+    <ClCompile Include="src\RankMngS.cpp" />
+    <ClCompile Include="src\WorldMngS.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\AllianceMngS.h" />
+    <ClInclude Include="inc\ChatMngS.h" />
+    <ClInclude Include="inc\ExcelTextMngS.h" />
+    <ClInclude Include="inc\GameMngS.h" />
+    <ClInclude Include="inc\InstanceMngS.h" />
+    <ClInclude Include="inc\LotteryMngS.h" />
+    <ClInclude Include="inc\NotificationMngS.h" />
+    <ClInclude Include="inc\PlayerCardMngS.h" />
+    <ClInclude Include="inc\PlayerMngS.h" />
+    <ClInclude Include="inc\RankMngS.h" />
+    <ClInclude Include="inc\WorldMngS.h" />
+    <ClInclude Include="inc\LPGamePlay4Web_i.h" />
+    <ClInclude Include="inc\LPNet.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

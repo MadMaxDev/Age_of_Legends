@@ -1,0 +1,134 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WHNET", "..\..\ENGINE\WHNET\WHNET.vcproj", "{020CDDD2-4A25-437C-B930-F67C46741D99}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WHCMN", "..\..\ENGINE\WHCMN\WHCMN.vcproj", "{96BBD710-F10A-40F7-A8AB-D0102B985CEB}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PNGS", "..\..\ENGINE\PNGS\PNGS.vcproj", "{4066490D-7B23-46EF-A692-7D1D4BE47457}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameUtilityLib", "..\..\GAME\GameUtilityLib\GameUtilityLib.vcproj", "{E8B592A7-90E8-48D1-87F8-447A12730AB1}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TTYS_CLib", "..\..\TTY\TTYS_CLib\TTYS_CLib.vcproj", "{E8B592A7-90E8-48D1-87F8-447A12730AB9}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Common", "..\..\TTY\Common\Common.vcproj", "{26C98B97-B739-4EC9-8216-0A7DCA5CBF0C}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cryptlib", "..\..\..\3RD\cryptlib\cryptlib.vcproj", "{A358F307-B5F5-42B4-A173-C289EC9EFF42}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ScriptSDK", "..\..\ENGINE\ScriptSDK\ScriptSDK.vcproj", "{68D83E42-F302-47F6-B187-259641171203}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "areamanager", "..\..\Engine\Core\areamanager\areamanager.vcproj", "{46618030-20A5-4A93-8A45-42B10629F682}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A358F307-B5F5-42B4-A173-C289EC9EFF42} = {A358F307-B5F5-42B4-A173-C289EC9EFF42}
+		{96BBD710-F10A-40F7-A8AB-D0102B985CEB} = {96BBD710-F10A-40F7-A8AB-D0102B985CEB}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HYSDK", "..\..\ENGINE\HYSDK\HYSDK.vcproj", "{5D650A08-3C08-484E-BF46-12ED71396265}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TTYGZS_Lib", "..\..\TTY\TTYGZS_Lib\TTYGZS_Lib.vcproj", "{3A38C276-ACA7-48B1-8CE3-9AF5337915D1}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TTYGZS_AIO", "..\..\TTY\TTYGZS_AIO\TTYGZS_AIO.vcproj", "{32DA038C-1D24-4870-8B3C-2D4ED42EE5B0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A358F307-B5F5-42B4-A173-C289EC9EFF42} = {A358F307-B5F5-42B4-A173-C289EC9EFF42}
+		{5D650A08-3C08-484E-BF46-12ED71396265} = {5D650A08-3C08-484E-BF46-12ED71396265}
+		{4066490D-7B23-46EF-A692-7D1D4BE47457} = {4066490D-7B23-46EF-A692-7D1D4BE47457}
+		{96BBD710-F10A-40F7-A8AB-D0102B985CEB} = {96BBD710-F10A-40F7-A8AB-D0102B985CEB}
+		{46618030-20A5-4A93-8A45-42B10629F682} = {46618030-20A5-4A93-8A45-42B10629F682}
+		{68D83E42-F302-47F6-B187-259641171203} = {68D83E42-F302-47F6-B187-259641171203}
+		{3A38C276-ACA7-48B1-8CE3-9AF5337915D1} = {3A38C276-ACA7-48B1-8CE3-9AF5337915D1}
+		{E8B592A7-90E8-48D1-87F8-447A12730AB1} = {E8B592A7-90E8-48D1-87F8-447A12730AB1}
+		{E8B592A7-90E8-48D1-87F8-447A12730AB9} = {E8B592A7-90E8-48D1-87F8-447A12730AB9}
+		{7468F8C5-FA7F-4B24-84FB-07A3DE2776A2} = {7468F8C5-FA7F-4B24-84FB-07A3DE2776A2}
+		{020CDDD2-4A25-437C-B930-F67C46741D99} = {020CDDD2-4A25-437C-B930-F67C46741D99}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GSDB_Lib", "..\..\TTY\GSDB_Lib\GSDB_Lib.vcproj", "{7468F8C5-FA7F-4B24-84FB-07A3DE2776A2}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{020CDDD2-4A25-437C-B930-F67C46741D99}.Debug.ActiveCfg = Debug|Win32
+		{020CDDD2-4A25-437C-B930-F67C46741D99}.Debug.Build.0 = Debug|Win32
+		{020CDDD2-4A25-437C-B930-F67C46741D99}.Release.ActiveCfg = Release|Win32
+		{020CDDD2-4A25-437C-B930-F67C46741D99}.Release.Build.0 = Release|Win32
+		{96BBD710-F10A-40F7-A8AB-D0102B985CEB}.Debug.ActiveCfg = Debug|Win32
+		{96BBD710-F10A-40F7-A8AB-D0102B985CEB}.Debug.Build.0 = Debug|Win32
+		{96BBD710-F10A-40F7-A8AB-D0102B985CEB}.Release.ActiveCfg = Release|Win32
+		{96BBD710-F10A-40F7-A8AB-D0102B985CEB}.Release.Build.0 = Release|Win32
+		{4066490D-7B23-46EF-A692-7D1D4BE47457}.Debug.ActiveCfg = Debug|Win32
+		{4066490D-7B23-46EF-A692-7D1D4BE47457}.Debug.Build.0 = Debug|Win32
+		{4066490D-7B23-46EF-A692-7D1D4BE47457}.Release.ActiveCfg = Release|Win32
+		{4066490D-7B23-46EF-A692-7D1D4BE47457}.Release.Build.0 = Release|Win32
+		{E8B592A7-90E8-48D1-87F8-447A12730AB1}.Debug.ActiveCfg = Debug|Win32
+		{E8B592A7-90E8-48D1-87F8-447A12730AB1}.Debug.Build.0 = Debug|Win32
+		{E8B592A7-90E8-48D1-87F8-447A12730AB1}.Release.ActiveCfg = Release|Win32
+		{E8B592A7-90E8-48D1-87F8-447A12730AB1}.Release.Build.0 = Release|Win32
+		{E8B592A7-90E8-48D1-87F8-447A12730AB9}.Debug.ActiveCfg = ServerDebug|Win32
+		{E8B592A7-90E8-48D1-87F8-447A12730AB9}.Debug.Build.0 = ServerDebug|Win32
+		{E8B592A7-90E8-48D1-87F8-447A12730AB9}.Release.ActiveCfg = ServerRelease|Win32
+		{E8B592A7-90E8-48D1-87F8-447A12730AB9}.Release.Build.0 = ServerRelease|Win32
+		{26C98B97-B739-4EC9-8216-0A7DCA5CBF0C}.Debug.ActiveCfg = Debug|Win32
+		{26C98B97-B739-4EC9-8216-0A7DCA5CBF0C}.Debug.Build.0 = Debug|Win32
+		{26C98B97-B739-4EC9-8216-0A7DCA5CBF0C}.Release.ActiveCfg = Release|Win32
+		{26C98B97-B739-4EC9-8216-0A7DCA5CBF0C}.Release.Build.0 = Release|Win32
+		{A358F307-B5F5-42B4-A173-C289EC9EFF42}.Debug.ActiveCfg = Debug|Win32
+		{A358F307-B5F5-42B4-A173-C289EC9EFF42}.Debug.Build.0 = Debug|Win32
+		{A358F307-B5F5-42B4-A173-C289EC9EFF42}.Release.ActiveCfg = Release|Win32
+		{A358F307-B5F5-42B4-A173-C289EC9EFF42}.Release.Build.0 = Release|Win32
+		{68D83E42-F302-47F6-B187-259641171203}.Debug.ActiveCfg = Debug|Win32
+		{68D83E42-F302-47F6-B187-259641171203}.Debug.Build.0 = Debug|Win32
+		{68D83E42-F302-47F6-B187-259641171203}.Release.ActiveCfg = Release|Win32
+		{68D83E42-F302-47F6-B187-259641171203}.Release.Build.0 = Release|Win32
+		{46618030-20A5-4A93-8A45-42B10629F682}.Debug.ActiveCfg = Debug|Win32
+		{46618030-20A5-4A93-8A45-42B10629F682}.Debug.Build.0 = Debug|Win32
+		{46618030-20A5-4A93-8A45-42B10629F682}.Release.ActiveCfg = Release|Win32
+		{46618030-20A5-4A93-8A45-42B10629F682}.Release.Build.0 = Release|Win32
+		{5D650A08-3C08-484E-BF46-12ED71396265}.Debug.ActiveCfg = Debug|Win32
+		{5D650A08-3C08-484E-BF46-12ED71396265}.Debug.Build.0 = Debug|Win32
+		{5D650A08-3C08-484E-BF46-12ED71396265}.Release.ActiveCfg = Release|Win32
+		{5D650A08-3C08-484E-BF46-12ED71396265}.Release.Build.0 = Release|Win32
+		{3A38C276-ACA7-48B1-8CE3-9AF5337915D1}.Debug.ActiveCfg = Debug|Win32
+		{3A38C276-ACA7-48B1-8CE3-9AF5337915D1}.Debug.Build.0 = Debug|Win32
+		{3A38C276-ACA7-48B1-8CE3-9AF5337915D1}.Release.ActiveCfg = Release|Win32
+		{3A38C276-ACA7-48B1-8CE3-9AF5337915D1}.Release.Build.0 = Release|Win32
+		{32DA038C-1D24-4870-8B3C-2D4ED42EE5B0}.Debug.ActiveCfg = Debug|Win32
+		{32DA038C-1D24-4870-8B3C-2D4ED42EE5B0}.Debug.Build.0 = Debug|Win32
+		{32DA038C-1D24-4870-8B3C-2D4ED42EE5B0}.Release.ActiveCfg = Release|Win32
+		{32DA038C-1D24-4870-8B3C-2D4ED42EE5B0}.Release.Build.0 = Release|Win32
+		{7468F8C5-FA7F-4B24-84FB-07A3DE2776A2}.Debug.ActiveCfg = Debug|Win32
+		{7468F8C5-FA7F-4B24-84FB-07A3DE2776A2}.Debug.Build.0 = Debug|Win32
+		{7468F8C5-FA7F-4B24-84FB-07A3DE2776A2}.Release.ActiveCfg = Release|Win32
+		{7468F8C5-FA7F-4B24-84FB-07A3DE2776A2}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VisualSVNWorkingCopyRoot = ..\..
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,75 @@
+#include ../cmncfg.txt
+#define	LPID		128
+#define	SERVERNAME	XLP4Web
+
+CMN
+{
+	// 本地字符集
+	szCharSet			= $(LOCAL_CHARSET)
+	bDaemon				= true
+	szSvrName			= $(SERVERNAME)
+	szLoggerAddr		= $(LOGADDRSTR_1)
+	nSelectInterval		= 20
+	szPIDFile			= $(SERVERNAME)-$(SVRGRPID).pid
+}
+PlugIn
+{
+	// 网络框架
+	DLL		= 0, ./LPMainStructure4Web$(CFGEXT).so, LPMainStructure4Web_Create
+	DLL		= 0, ./LPGamePlay4Web$(CFGEXT).so, LPGamePlay4Web_Create
+	DLL		= 0, ./GSDB4Web$(CFGEXT).so, GSDB4Web_Create
+	DLL		= 0, ./TCPReceiver$(CFGEXT).so, TCPReceiver_Create
+}
+GameMng
+{
+	nNotificationSendToClientNum	= 10
+	nGroupPlayerTotalNumExpect		= 10000
+	nWorldXMax						= 400	 
+	nWorldYMax						= 400
+	szMBDir							= $(LOCAL_MB_DIR)
+}
+LPGamePlay
+{
+	szGS4WebAddr	= $(XGS4WebOUTERIP):$(PORT_XGS4Web)
+	nSvrGrpID	= $(SVRGRPID)
+	nMaxPlayer	= $(MAXPLAYER)
+    // bCreateAccountIfNotExist在91平台需要打开为true，苹果平台不用自动创建帐号
+    // bUseRandomAccountName只在bCreateAccountIfNotExist为true时才有意义
+#ifdef  VERSION_91
+	bCreateAccountIfNotExist	= true
+	bUseRandomAccountName		= false
+#else
+	bCreateAccountIfNotExist	= false
+#endif
+//	szBadNameFile	= $(LOCAL_MB_DIR)etc/badname.txt
+}
+LPMainStructure
+{
+	nMaxPlayer = $(MAXPLAYER)
+	// 每个CAAFS组的最多的CLS数量
+	anMaxCLS4WebNumInCAAFS4WebGroup		= 8, 8
+	// 每个CAAFS组的每个CLS最多支持的用户数量
+	anMaxPlayerNumInCLS4WebOfCAAFS4WebGroup	= 8000, 8000
+}
+TCPRECEIVER
+{
+	nMaxCmdPerSec	= 5000
+	CNTRSVR
+    {
+		nPort   = $(PORT_XLP4Web)+$(PORTSHIFT)
+		szIP    = $(XLP4WebINNERIP)
+	}
+	MSGER
+	{
+	}
+}
+GSDB4Web
+{
+	// 数据库代理的地址、端口
+	szDBS4WebAddr				= $(XDBS4WEBINNERIP):$(PORT_XDBS4WEB)+$(PORTSHIFT)
+	// 参数
+	nQueueCmdInSize				= 50*1024*1024			//指令输入队列的长度
+	nConnectDBS4WebTimeout		= 10*1000				//连接DBS4Web的超时(单位ms)
+	nSendRecvBufSize			= 50*1024*1024			//收发缓存的大小
+	nInterval					= 0						//send,recv的超时
+}

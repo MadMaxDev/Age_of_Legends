@@ -1,0 +1,3 @@
+#define	PORT	2001
+#define	NAME	err
+#include	glogger_cmn.txt

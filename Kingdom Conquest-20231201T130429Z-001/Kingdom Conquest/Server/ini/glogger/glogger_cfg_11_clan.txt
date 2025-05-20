@@ -1,0 +1,3 @@
+#define	PORT	2011
+#define	NAME	clan
+#include	glogger_cmn.txt

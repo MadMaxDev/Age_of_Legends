@@ -1,0 +1,6 @@
+#include ../cmncfg.txt
+EPOLL_CLIENT
+{
+	szIP	= $(XCAAFS4WebOUTTERIP1)
+	iPort	= $(PORT_XCAAFS4Web) + $(PORTSHIFT)
+}

@@ -1,0 +1,26 @@
+#define	SERVERNAME	XCLS4Web
+CMN
+{
+	bDaemon			= true
+	szLoggerAddr		= $(LOGADDRSTR_2)
+	nSelectInterval		= 50
+	szSvrName               = $(SERVERNAME)
+	szPIDFile		= XCLS4Web-$(SVRGRPID)-$(GROUPID)-$(CLS4WebIDX).pid
+}
+PlugIn
+{
+	DLL			= 0, ./CLS4Web$(CFGEXT).so, CLS4Web_Create
+}
+CLS4Web
+{
+	nGroupID		= $(GROUPID)
+	szWelcomeAddr		= $(XCLS4WebOUTTERIP):$(PORT_XCLS4Web)+$(PORTSHIFT)+$(CLS4WebIDX)
+	szLogicProxyAddr	= $(XLP4WebINNERIP):$(PORT_XLP4Web)+$(PORTSHIFT)
+}
+EPOLL_SERVER
+{
+        iDropTimeout            = 5*60*1000
+	iKATimeout		= 3*1000
+	iCloseTimeout		= 6*1000
+	bNeedCode		= true
+}
